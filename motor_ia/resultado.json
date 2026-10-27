@@ -1,0 +1,4327 @@
+{
+  "versao": "0.3",
+  "arquivo": "C:\\Users\\guilh\\Downloads\\Teste\\TAKES\\Camera1.MOV",
+  "modelo": "small",
+  "idioma": "pt",
+  "observacoes": [
+    "Não identifica falantes/câmeras.",
+    "Pausas estimadas entre blocos transcritos; não são cortes aprovados.",
+    "Tempos relativos ao início do arquivo, não à posição na timeline."
+  ],
+  "blocos": [
+    {
+      "inicio": 0.43,
+      "fim": 1.21,
+      "texto": "Vamos lá?",
+      "palavras": [
+        {
+          "inicio": 0.43,
+          "fim": 0.95,
+          "texto": "Vamos"
+        },
+        {
+          "inicio": 0.95,
+          "fim": 1.21,
+          "texto": "lá?"
+        }
+      ]
+    },
+    {
+      "inicio": 4.15,
+      "fim": 5.03,
+      "texto": "Como é seu nome?",
+      "palavras": [
+        {
+          "inicio": 4.15,
+          "fim": 4.67,
+          "texto": "Como"
+        },
+        {
+          "inicio": 4.67,
+          "fim": 4.75,
+          "texto": "é"
+        },
+        {
+          "inicio": 4.75,
+          "fim": 4.83,
+          "texto": "seu"
+        },
+        {
+          "inicio": 4.83,
+          "fim": 5.03,
+          "texto": "nome?"
+        }
+      ]
+    },
+    {
+      "inicio": 5.37,
+      "fim": 6.23,
+      "texto": "Cristina Gremel.",
+      "palavras": [
+        {
+          "inicio": 5.37,
+          "fim": 5.73,
+          "texto": "Cristina"
+        },
+        {
+          "inicio": 5.73,
+          "fim": 6.23,
+          "texto": "Gremel."
+        }
+      ]
+    },
+    {
+      "inicio": 9.71,
+      "fim": 11.09,
+      "texto": "Como é seu nome?",
+      "palavras": [
+        {
+          "inicio": 9.71,
+          "fim": 10.23,
+          "texto": "Como"
+        },
+        {
+          "inicio": 10.23,
+          "fim": 10.75,
+          "texto": "é"
+        },
+        {
+          "inicio": 10.75,
+          "fim": 10.83,
+          "texto": "seu"
+        },
+        {
+          "inicio": 10.83,
+          "fim": 11.09,
+          "texto": "nome?"
+        }
+      ]
+    },
+    {
+      "inicio": 11.85,
+      "fim": 12.75,
+      "texto": "Cristina Gremel.",
+      "palavras": [
+        {
+          "inicio": 11.85,
+          "fim": 12.29,
+          "texto": "Cristina"
+        },
+        {
+          "inicio": 12.29,
+          "fim": 12.75,
+          "texto": "Gremel."
+        }
+      ]
+    },
+    {
+      "inicio": 12.87,
+      "fim": 14.35,
+      "texto": "Você é de esquerda ou de direita?",
+      "palavras": [
+        {
+          "inicio": 12.87,
+          "fim": 13.09,
+          "texto": "Você"
+        },
+        {
+          "inicio": 13.09,
+          "fim": 13.23,
+          "texto": "é"
+        },
+        {
+          "inicio": 13.23,
+          "fim": 13.25,
+          "texto": "de"
+        },
+        {
+          "inicio": 13.25,
+          "fim": 13.65,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 13.65,
+          "fim": 13.89,
+          "texto": "ou"
+        },
+        {
+          "inicio": 13.89,
+          "fim": 13.99,
+          "texto": "de"
+        },
+        {
+          "inicio": 13.99,
+          "fim": 14.35,
+          "texto": "direita?"
+        }
+      ]
+    },
+    {
+      "inicio": 14.53,
+      "fim": 14.95,
+      "texto": "Direita.",
+      "palavras": [
+        {
+          "inicio": 14.53,
+          "fim": 14.95,
+          "texto": "Direita."
+        }
+      ]
+    },
+    {
+      "inicio": 15.23,
+      "fim": 16.27,
+      "texto": "Por que você é de direita?",
+      "palavras": [
+        {
+          "inicio": 15.23,
+          "fim": 15.41,
+          "texto": "Por"
+        },
+        {
+          "inicio": 15.41,
+          "fim": 15.51,
+          "texto": "que"
+        },
+        {
+          "inicio": 15.51,
+          "fim": 15.75,
+          "texto": "você"
+        },
+        {
+          "inicio": 15.75,
+          "fim": 15.91,
+          "texto": "é"
+        },
+        {
+          "inicio": 15.91,
+          "fim": 15.91,
+          "texto": "de"
+        },
+        {
+          "inicio": 15.91,
+          "fim": 16.27,
+          "texto": "direita?"
+        }
+      ]
+    },
+    {
+      "inicio": 16.59,
+      "fim": 19.87,
+      "texto": "Porque eu defendo as pautas que a direita defende.",
+      "palavras": [
+        {
+          "inicio": 16.59,
+          "fim": 16.83,
+          "texto": "Porque"
+        },
+        {
+          "inicio": 16.83,
+          "fim": 16.93,
+          "texto": "eu"
+        },
+        {
+          "inicio": 16.93,
+          "fim": 17.39,
+          "texto": "defendo"
+        },
+        {
+          "inicio": 17.39,
+          "fim": 17.83,
+          "texto": "as"
+        },
+        {
+          "inicio": 17.83,
+          "fim": 18.47,
+          "texto": "pautas"
+        },
+        {
+          "inicio": 18.47,
+          "fim": 18.71,
+          "texto": "que"
+        },
+        {
+          "inicio": 18.71,
+          "fim": 18.81,
+          "texto": "a"
+        },
+        {
+          "inicio": 18.81,
+          "fim": 19.27,
+          "texto": "direita"
+        },
+        {
+          "inicio": 19.27,
+          "fim": 19.87,
+          "texto": "defende."
+        }
+      ]
+    },
+    {
+      "inicio": 20.01,
+      "fim": 22.23,
+      "texto": "A vida, desde a concepção, eu defendo a família,",
+      "palavras": [
+        {
+          "inicio": 20.01,
+          "fim": 20.05,
+          "texto": "A"
+        },
+        {
+          "inicio": 20.05,
+          "fim": 20.27,
+          "texto": "vida,"
+        },
+        {
+          "inicio": 20.37,
+          "fim": 20.49,
+          "texto": "desde"
+        },
+        {
+          "inicio": 20.49,
+          "fim": 20.67,
+          "texto": "a"
+        },
+        {
+          "inicio": 20.67,
+          "fim": 21.25,
+          "texto": "concepção,"
+        },
+        {
+          "inicio": 21.47,
+          "fim": 21.49,
+          "texto": "eu"
+        },
+        {
+          "inicio": 21.49,
+          "fim": 21.81,
+          "texto": "defendo"
+        },
+        {
+          "inicio": 21.81,
+          "fim": 21.93,
+          "texto": "a"
+        },
+        {
+          "inicio": 21.93,
+          "fim": 22.23,
+          "texto": "família,"
+        }
+      ]
+    },
+    {
+      "inicio": 22.69,
+      "fim": 25.45,
+      "texto": "eu defendo a propriedade privada, o respeito às leis,",
+      "palavras": [
+        {
+          "inicio": 22.69,
+          "fim": 22.75,
+          "texto": "eu"
+        },
+        {
+          "inicio": 22.75,
+          "fim": 23.19,
+          "texto": "defendo"
+        },
+        {
+          "inicio": 23.19,
+          "fim": 23.41,
+          "texto": "a"
+        },
+        {
+          "inicio": 23.41,
+          "fim": 23.83,
+          "texto": "propriedade"
+        },
+        {
+          "inicio": 23.83,
+          "fim": 24.35,
+          "texto": "privada,"
+        },
+        {
+          "inicio": 24.45,
+          "fim": 24.49,
+          "texto": "o"
+        },
+        {
+          "inicio": 24.49,
+          "fim": 24.89,
+          "texto": "respeito"
+        },
+        {
+          "inicio": 24.89,
+          "fim": 25.05,
+          "texto": "às"
+        },
+        {
+          "inicio": 25.05,
+          "fim": 25.45,
+          "texto": "leis,"
+        }
+      ]
+    },
+    {
+      "inicio": 25.53,
+      "fim": 27.07,
+      "texto": "eu defendo as nossas liberdades.",
+      "palavras": [
+        {
+          "inicio": 25.53,
+          "fim": 25.57,
+          "texto": "eu"
+        },
+        {
+          "inicio": 25.57,
+          "fim": 25.87,
+          "texto": "defendo"
+        },
+        {
+          "inicio": 25.87,
+          "fim": 25.97,
+          "texto": "as"
+        },
+        {
+          "inicio": 25.97,
+          "fim": 26.23,
+          "texto": "nossas"
+        },
+        {
+          "inicio": 26.23,
+          "fim": 27.07,
+          "texto": "liberdades."
+        }
+      ]
+    },
+    {
+      "inicio": 27.07,
+      "fim": 31.69,
+      "texto": "Eu sempre digo que direita e esquerda são conceitos políticos e que todo mundo busca o progresso.",
+      "palavras": [
+        {
+          "inicio": 27.07,
+          "fim": 27.51,
+          "texto": "Eu"
+        },
+        {
+          "inicio": 27.51,
+          "fim": 27.71,
+          "texto": "sempre"
+        },
+        {
+          "inicio": 27.71,
+          "fim": 27.99,
+          "texto": "digo"
+        },
+        {
+          "inicio": 27.99,
+          "fim": 28.13,
+          "texto": "que"
+        },
+        {
+          "inicio": 28.13,
+          "fim": 28.49,
+          "texto": "direita"
+        },
+        {
+          "inicio": 28.49,
+          "fim": 28.61,
+          "texto": "e"
+        },
+        {
+          "inicio": 28.61,
+          "fim": 29.07,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 29.07,
+          "fim": 29.25,
+          "texto": "são"
+        },
+        {
+          "inicio": 29.25,
+          "fim": 29.69,
+          "texto": "conceitos"
+        },
+        {
+          "inicio": 29.69,
+          "fim": 30.27,
+          "texto": "políticos"
+        },
+        {
+          "inicio": 30.27,
+          "fim": 30.41,
+          "texto": "e"
+        },
+        {
+          "inicio": 30.41,
+          "fim": 30.47,
+          "texto": "que"
+        },
+        {
+          "inicio": 30.47,
+          "fim": 30.63,
+          "texto": "todo"
+        },
+        {
+          "inicio": 30.63,
+          "fim": 30.85,
+          "texto": "mundo"
+        },
+        {
+          "inicio": 30.85,
+          "fim": 31.05,
+          "texto": "busca"
+        },
+        {
+          "inicio": 31.05,
+          "fim": 31.25,
+          "texto": "o"
+        },
+        {
+          "inicio": 31.25,
+          "fim": 31.69,
+          "texto": "progresso."
+        }
+      ]
+    },
+    {
+      "inicio": 31.91,
+      "fim": 35.61,
+      "texto": "Todo mundo busca, eu acredito, melhorar a vida das pessoas.",
+      "palavras": [
+        {
+          "inicio": 31.91,
+          "fim": 32.35,
+          "texto": "Todo"
+        },
+        {
+          "inicio": 32.35,
+          "fim": 32.69,
+          "texto": "mundo"
+        },
+        {
+          "inicio": 32.69,
+          "fim": 33.33,
+          "texto": "busca,"
+        },
+        {
+          "inicio": 33.49,
+          "fim": 33.59,
+          "texto": "eu"
+        },
+        {
+          "inicio": 33.59,
+          "fim": 34.09,
+          "texto": "acredito,"
+        },
+        {
+          "inicio": 34.19,
+          "fim": 34.63,
+          "texto": "melhorar"
+        },
+        {
+          "inicio": 34.63,
+          "fim": 34.75,
+          "texto": "a"
+        },
+        {
+          "inicio": 34.75,
+          "fim": 34.91,
+          "texto": "vida"
+        },
+        {
+          "inicio": 34.91,
+          "fim": 35.17,
+          "texto": "das"
+        },
+        {
+          "inicio": 35.17,
+          "fim": 35.61,
+          "texto": "pessoas."
+        }
+      ]
+    },
+    {
+      "inicio": 36.23,
+      "fim": 39.95,
+      "texto": "Especialmente das pessoas que menos acesso tem a serviços públicos.",
+      "palavras": [
+        {
+          "inicio": 36.23,
+          "fim": 36.67,
+          "texto": "Especialmente"
+        },
+        {
+          "inicio": 36.67,
+          "fim": 36.81,
+          "texto": "das"
+        },
+        {
+          "inicio": 36.81,
+          "fim": 37.07,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 37.07,
+          "fim": 37.25,
+          "texto": "que"
+        },
+        {
+          "inicio": 37.25,
+          "fim": 37.55,
+          "texto": "menos"
+        },
+        {
+          "inicio": 37.55,
+          "fim": 37.95,
+          "texto": "acesso"
+        },
+        {
+          "inicio": 37.95,
+          "fim": 38.35,
+          "texto": "tem"
+        },
+        {
+          "inicio": 38.35,
+          "fim": 38.89,
+          "texto": "a"
+        },
+        {
+          "inicio": 38.89,
+          "fim": 39.31,
+          "texto": "serviços"
+        },
+        {
+          "inicio": 39.31,
+          "fim": 39.95,
+          "texto": "públicos."
+        }
+      ]
+    },
+    {
+      "inicio": 40.15,
+      "fim": 42.97,
+      "texto": "Só que alguns acreditam por um caminho, outros por outro caminho.",
+      "palavras": [
+        {
+          "inicio": 40.15,
+          "fim": 40.43,
+          "texto": "Só"
+        },
+        {
+          "inicio": 40.43,
+          "fim": 40.55,
+          "texto": "que"
+        },
+        {
+          "inicio": 40.55,
+          "fim": 40.75,
+          "texto": "alguns"
+        },
+        {
+          "inicio": 40.75,
+          "fim": 41.31,
+          "texto": "acreditam"
+        },
+        {
+          "inicio": 41.31,
+          "fim": 41.47,
+          "texto": "por"
+        },
+        {
+          "inicio": 41.47,
+          "fim": 41.61,
+          "texto": "um"
+        },
+        {
+          "inicio": 41.61,
+          "fim": 41.83,
+          "texto": "caminho,"
+        },
+        {
+          "inicio": 42.13,
+          "fim": 42.25,
+          "texto": "outros"
+        },
+        {
+          "inicio": 42.25,
+          "fim": 42.41,
+          "texto": "por"
+        },
+        {
+          "inicio": 42.41,
+          "fim": 42.57,
+          "texto": "outro"
+        },
+        {
+          "inicio": 42.57,
+          "fim": 42.97,
+          "texto": "caminho."
+        }
+      ]
+    },
+    {
+      "inicio": 43.15,
+      "fim": 44.49,
+      "texto": "O importante é que a gente chegue no progresso.",
+      "palavras": [
+        {
+          "inicio": 43.15,
+          "fim": 43.15,
+          "texto": "O"
+        },
+        {
+          "inicio": 43.15,
+          "fim": 43.33,
+          "texto": "importante"
+        },
+        {
+          "inicio": 43.33,
+          "fim": 43.53,
+          "texto": "é"
+        },
+        {
+          "inicio": 43.53,
+          "fim": 43.53,
+          "texto": "que"
+        },
+        {
+          "inicio": 43.53,
+          "fim": 43.57,
+          "texto": "a"
+        },
+        {
+          "inicio": 43.57,
+          "fim": 43.71,
+          "texto": "gente"
+        },
+        {
+          "inicio": 43.71,
+          "fim": 43.93,
+          "texto": "chegue"
+        },
+        {
+          "inicio": 43.93,
+          "fim": 44.05,
+          "texto": "no"
+        },
+        {
+          "inicio": 44.05,
+          "fim": 44.49,
+          "texto": "progresso."
+        }
+      ]
+    },
+    {
+      "inicio": 44.75,
+      "fim": 46.87,
+      "texto": "Mas o que você está achando da esquerda atual?",
+      "palavras": [
+        {
+          "inicio": 44.75,
+          "fim": 44.89,
+          "texto": "Mas"
+        },
+        {
+          "inicio": 44.89,
+          "fim": 44.93,
+          "texto": "o"
+        },
+        {
+          "inicio": 44.93,
+          "fim": 44.97,
+          "texto": "que"
+        },
+        {
+          "inicio": 44.97,
+          "fim": 45.23,
+          "texto": "você"
+        },
+        {
+          "inicio": 45.23,
+          "fim": 45.41,
+          "texto": "está"
+        },
+        {
+          "inicio": 45.41,
+          "fim": 45.77,
+          "texto": "achando"
+        },
+        {
+          "inicio": 45.77,
+          "fim": 46.21,
+          "texto": "da"
+        },
+        {
+          "inicio": 46.21,
+          "fim": 46.65,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 46.65,
+          "fim": 46.87,
+          "texto": "atual?"
+        }
+      ]
+    },
+    {
+      "inicio": 47.99,
+      "fim": 50.21,
+      "texto": "A esquerda lula, eu sou contra.",
+      "palavras": [
+        {
+          "inicio": 47.99,
+          "fim": 48.15,
+          "texto": "A"
+        },
+        {
+          "inicio": 48.15,
+          "fim": 48.59,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 48.59,
+          "fim": 49.19,
+          "texto": "lula,"
+        },
+        {
+          "inicio": 49.49,
+          "fim": 49.65,
+          "texto": "eu"
+        },
+        {
+          "inicio": 49.65,
+          "fim": 49.81,
+          "texto": "sou"
+        },
+        {
+          "inicio": 49.81,
+          "fim": 50.21,
+          "texto": "contra."
+        }
+      ]
+    },
+    {
+      "inicio": 50.49,
+      "fim": 53.23,
+      "texto": "Porque eu acho que o governo lula já teve quase 20 anos,",
+      "palavras": [
+        {
+          "inicio": 50.49,
+          "fim": 50.67,
+          "texto": "Porque"
+        },
+        {
+          "inicio": 50.67,
+          "fim": 50.77,
+          "texto": "eu"
+        },
+        {
+          "inicio": 50.77,
+          "fim": 50.89,
+          "texto": "acho"
+        },
+        {
+          "inicio": 50.89,
+          "fim": 50.99,
+          "texto": "que"
+        },
+        {
+          "inicio": 50.99,
+          "fim": 51.05,
+          "texto": "o"
+        },
+        {
+          "inicio": 51.05,
+          "fim": 51.35,
+          "texto": "governo"
+        },
+        {
+          "inicio": 51.35,
+          "fim": 51.95,
+          "texto": "lula"
+        },
+        {
+          "inicio": 51.95,
+          "fim": 52.15,
+          "texto": "já"
+        },
+        {
+          "inicio": 52.15,
+          "fim": 52.39,
+          "texto": "teve"
+        },
+        {
+          "inicio": 52.39,
+          "fim": 52.61,
+          "texto": "quase"
+        },
+        {
+          "inicio": 52.61,
+          "fim": 52.93,
+          "texto": "20"
+        },
+        {
+          "inicio": 52.93,
+          "fim": 53.23,
+          "texto": "anos,"
+        }
+      ]
+    },
+    {
+      "inicio": 53.23,
+      "fim": 58.51,
+      "texto": "ou petismo. Na verdade, já teve quase 20 anos para mostrar que veio e os resultados são péssimos.",
+      "palavras": [
+        {
+          "inicio": 53.23,
+          "fim": 53.55,
+          "texto": "ou"
+        },
+        {
+          "inicio": 53.55,
+          "fim": 54.25,
+          "texto": "petismo."
+        },
+        {
+          "inicio": 54.39,
+          "fim": 54.41,
+          "texto": "Na"
+        },
+        {
+          "inicio": 54.41,
+          "fim": 54.65,
+          "texto": "verdade,"
+        },
+        {
+          "inicio": 54.71,
+          "fim": 54.83,
+          "texto": "já"
+        },
+        {
+          "inicio": 54.83,
+          "fim": 54.93,
+          "texto": "teve"
+        },
+        {
+          "inicio": 54.93,
+          "fim": 55.17,
+          "texto": "quase"
+        },
+        {
+          "inicio": 55.17,
+          "fim": 55.47,
+          "texto": "20"
+        },
+        {
+          "inicio": 55.47,
+          "fim": 55.71,
+          "texto": "anos"
+        },
+        {
+          "inicio": 55.71,
+          "fim": 55.85,
+          "texto": "para"
+        },
+        {
+          "inicio": 55.85,
+          "fim": 56.13,
+          "texto": "mostrar"
+        },
+        {
+          "inicio": 56.13,
+          "fim": 56.41,
+          "texto": "que"
+        },
+        {
+          "inicio": 56.41,
+          "fim": 56.69,
+          "texto": "veio"
+        },
+        {
+          "inicio": 56.69,
+          "fim": 57.25,
+          "texto": "e"
+        },
+        {
+          "inicio": 57.25,
+          "fim": 57.37,
+          "texto": "os"
+        },
+        {
+          "inicio": 57.37,
+          "fim": 57.75,
+          "texto": "resultados"
+        },
+        {
+          "inicio": 57.75,
+          "fim": 58.01,
+          "texto": "são"
+        },
+        {
+          "inicio": 58.01,
+          "fim": 58.51,
+          "texto": "péssimos."
+        }
+      ]
+    },
+    {
+      "inicio": 59.11,
+      "fim": 64.03,
+      "texto": "Se a gente tivesse tirado pessoas da pobreza, como de fato eles pregam, não estaríamos com tantos",
+      "palavras": [
+        {
+          "inicio": 59.11,
+          "fim": 59.27,
+          "texto": "Se"
+        },
+        {
+          "inicio": 59.27,
+          "fim": 59.33,
+          "texto": "a"
+        },
+        {
+          "inicio": 59.33,
+          "fim": 59.47,
+          "texto": "gente"
+        },
+        {
+          "inicio": 59.47,
+          "fim": 59.91,
+          "texto": "tivesse"
+        },
+        {
+          "inicio": 59.91,
+          "fim": 60.31,
+          "texto": "tirado"
+        },
+        {
+          "inicio": 60.31,
+          "fim": 60.63,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 60.63,
+          "fim": 60.91,
+          "texto": "da"
+        },
+        {
+          "inicio": 60.91,
+          "fim": 61.37,
+          "texto": "pobreza,"
+        },
+        {
+          "inicio": 61.37,
+          "fim": 61.57,
+          "texto": "como"
+        },
+        {
+          "inicio": 61.57,
+          "fim": 61.69,
+          "texto": "de"
+        },
+        {
+          "inicio": 61.69,
+          "fim": 61.91,
+          "texto": "fato"
+        },
+        {
+          "inicio": 61.91,
+          "fim": 62.09,
+          "texto": "eles"
+        },
+        {
+          "inicio": 62.09,
+          "fim": 62.65,
+          "texto": "pregam,"
+        },
+        {
+          "inicio": 62.95,
+          "fim": 63.07,
+          "texto": "não"
+        },
+        {
+          "inicio": 63.07,
+          "fim": 63.49,
+          "texto": "estaríamos"
+        },
+        {
+          "inicio": 63.49,
+          "fim": 63.69,
+          "texto": "com"
+        },
+        {
+          "inicio": 63.69,
+          "fim": 64.03,
+          "texto": "tantos"
+        }
+      ]
+    },
+    {
+      "inicio": 64.03,
+      "fim": 68.77,
+      "texto": "dependentes do Bolsa Família. Então eu sou a favor de a gente ter assistencialismo para aqueles",
+      "palavras": [
+        {
+          "inicio": 64.03,
+          "fim": 64.59,
+          "texto": "dependentes"
+        },
+        {
+          "inicio": 64.59,
+          "fim": 64.77,
+          "texto": "do"
+        },
+        {
+          "inicio": 64.77,
+          "fim": 65.01,
+          "texto": "Bolsa"
+        },
+        {
+          "inicio": 65.01,
+          "fim": 65.47,
+          "texto": "Família."
+        },
+        {
+          "inicio": 65.87,
+          "fim": 66.13,
+          "texto": "Então"
+        },
+        {
+          "inicio": 66.13,
+          "fim": 66.29,
+          "texto": "eu"
+        },
+        {
+          "inicio": 66.29,
+          "fim": 66.57,
+          "texto": "sou"
+        },
+        {
+          "inicio": 66.57,
+          "fim": 66.73,
+          "texto": "a"
+        },
+        {
+          "inicio": 66.73,
+          "fim": 66.97,
+          "texto": "favor"
+        },
+        {
+          "inicio": 66.97,
+          "fim": 67.11,
+          "texto": "de"
+        },
+        {
+          "inicio": 67.11,
+          "fim": 67.13,
+          "texto": "a"
+        },
+        {
+          "inicio": 67.13,
+          "fim": 67.29,
+          "texto": "gente"
+        },
+        {
+          "inicio": 67.29,
+          "fim": 67.53,
+          "texto": "ter"
+        },
+        {
+          "inicio": 67.53,
+          "fim": 68.37,
+          "texto": "assistencialismo"
+        },
+        {
+          "inicio": 68.37,
+          "fim": 68.57,
+          "texto": "para"
+        },
+        {
+          "inicio": 68.57,
+          "fim": 68.77,
+          "texto": "aqueles"
+        }
+      ]
+    },
+    {
+      "inicio": 68.77,
+      "fim": 73.69,
+      "texto": "que mais precisam, mas com porta de saída. Ensina as pessoas da trabalhada, da educação.",
+      "palavras": [
+        {
+          "inicio": 68.77,
+          "fim": 68.95,
+          "texto": "que"
+        },
+        {
+          "inicio": 68.95,
+          "fim": 69.21,
+          "texto": "mais"
+        },
+        {
+          "inicio": 69.21,
+          "fim": 69.81,
+          "texto": "precisam,"
+        },
+        {
+          "inicio": 70.01,
+          "fim": 70.23,
+          "texto": "mas"
+        },
+        {
+          "inicio": 70.23,
+          "fim": 70.41,
+          "texto": "com"
+        },
+        {
+          "inicio": 70.41,
+          "fim": 70.69,
+          "texto": "porta"
+        },
+        {
+          "inicio": 70.69,
+          "fim": 70.87,
+          "texto": "de"
+        },
+        {
+          "inicio": 70.87,
+          "fim": 71.21,
+          "texto": "saída."
+        },
+        {
+          "inicio": 71.29,
+          "fim": 71.73,
+          "texto": "Ensina"
+        },
+        {
+          "inicio": 71.73,
+          "fim": 71.93,
+          "texto": "as"
+        },
+        {
+          "inicio": 71.93,
+          "fim": 72.15,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 72.15,
+          "fim": 72.33,
+          "texto": "da"
+        },
+        {
+          "inicio": 72.33,
+          "fim": 72.79,
+          "texto": "trabalhada,"
+        },
+        {
+          "inicio": 73.07,
+          "fim": 73.07,
+          "texto": "da"
+        },
+        {
+          "inicio": 73.07,
+          "fim": 73.69,
+          "texto": "educação."
+        }
+      ]
+    },
+    {
+      "inicio": 74.07,
+      "fim": 78.61,
+      "texto": "Você não pode tirar do ser humano a alegria de poder sustentar a sua própria família.",
+      "palavras": [
+        {
+          "inicio": 74.07,
+          "fim": 74.21,
+          "texto": "Você"
+        },
+        {
+          "inicio": 74.21,
+          "fim": 74.33,
+          "texto": "não"
+        },
+        {
+          "inicio": 74.33,
+          "fim": 74.55,
+          "texto": "pode"
+        },
+        {
+          "inicio": 74.55,
+          "fim": 74.85,
+          "texto": "tirar"
+        },
+        {
+          "inicio": 74.85,
+          "fim": 75.01,
+          "texto": "do"
+        },
+        {
+          "inicio": 75.01,
+          "fim": 75.19,
+          "texto": "ser"
+        },
+        {
+          "inicio": 75.19,
+          "fim": 75.49,
+          "texto": "humano"
+        },
+        {
+          "inicio": 75.49,
+          "fim": 76.25,
+          "texto": "a"
+        },
+        {
+          "inicio": 76.25,
+          "fim": 76.81,
+          "texto": "alegria"
+        },
+        {
+          "inicio": 76.81,
+          "fim": 77.03,
+          "texto": "de"
+        },
+        {
+          "inicio": 77.03,
+          "fim": 77.25,
+          "texto": "poder"
+        },
+        {
+          "inicio": 77.25,
+          "fim": 77.73,
+          "texto": "sustentar"
+        },
+        {
+          "inicio": 77.73,
+          "fim": 77.85,
+          "texto": "a"
+        },
+        {
+          "inicio": 77.85,
+          "fim": 77.91,
+          "texto": "sua"
+        },
+        {
+          "inicio": 77.91,
+          "fim": 78.19,
+          "texto": "própria"
+        },
+        {
+          "inicio": 78.19,
+          "fim": 78.61,
+          "texto": "família."
+        }
+      ]
+    },
+    {
+      "inicio": 78.61,
+      "fim": 83.93,
+      "texto": "Eu acho que quando você só dá, sem exigir que ele também busque progresso por conta própria,",
+      "palavras": [
+        {
+          "inicio": 78.61,
+          "fim": 78.79,
+          "texto": "Eu"
+        },
+        {
+          "inicio": 78.79,
+          "fim": 78.95,
+          "texto": "acho"
+        },
+        {
+          "inicio": 78.95,
+          "fim": 79.09,
+          "texto": "que"
+        },
+        {
+          "inicio": 79.09,
+          "fim": 79.23,
+          "texto": "quando"
+        },
+        {
+          "inicio": 79.23,
+          "fim": 79.53,
+          "texto": "você"
+        },
+        {
+          "inicio": 79.53,
+          "fim": 79.87,
+          "texto": "só"
+        },
+        {
+          "inicio": 79.87,
+          "fim": 80.43,
+          "texto": "dá,"
+        },
+        {
+          "inicio": 80.77,
+          "fim": 81.07,
+          "texto": "sem"
+        },
+        {
+          "inicio": 81.07,
+          "fim": 81.53,
+          "texto": "exigir"
+        },
+        {
+          "inicio": 81.53,
+          "fim": 81.69,
+          "texto": "que"
+        },
+        {
+          "inicio": 81.69,
+          "fim": 81.81,
+          "texto": "ele"
+        },
+        {
+          "inicio": 81.81,
+          "fim": 82.03,
+          "texto": "também"
+        },
+        {
+          "inicio": 82.03,
+          "fim": 82.47,
+          "texto": "busque"
+        },
+        {
+          "inicio": 82.47,
+          "fim": 82.93,
+          "texto": "progresso"
+        },
+        {
+          "inicio": 82.93,
+          "fim": 83.17,
+          "texto": "por"
+        },
+        {
+          "inicio": 83.17,
+          "fim": 83.39,
+          "texto": "conta"
+        },
+        {
+          "inicio": 83.39,
+          "fim": 83.93,
+          "texto": "própria,"
+        }
+      ]
+    },
+    {
+      "inicio": 84.19,
+      "fim": 85.69,
+      "texto": "você tira dele essa alegria.",
+      "palavras": [
+        {
+          "inicio": 84.19,
+          "fim": 84.51,
+          "texto": "você"
+        },
+        {
+          "inicio": 84.51,
+          "fim": 84.79,
+          "texto": "tira"
+        },
+        {
+          "inicio": 84.79,
+          "fim": 84.99,
+          "texto": "dele"
+        },
+        {
+          "inicio": 84.99,
+          "fim": 85.23,
+          "texto": "essa"
+        },
+        {
+          "inicio": 85.23,
+          "fim": 85.69,
+          "texto": "alegria."
+        }
+      ]
+    },
+    {
+      "inicio": 86.25,
+      "fim": 89.81,
+      "texto": "Então, isso que eu estou dizendo, são caminhos diferentes para chegar ao mesmo objetivo.",
+      "palavras": [
+        {
+          "inicio": 86.25,
+          "fim": 86.27,
+          "texto": "Então,"
+        },
+        {
+          "inicio": 86.37,
+          "fim": 86.95,
+          "texto": "isso"
+        },
+        {
+          "inicio": 86.95,
+          "fim": 87.07,
+          "texto": "que"
+        },
+        {
+          "inicio": 87.07,
+          "fim": 87.11,
+          "texto": "eu"
+        },
+        {
+          "inicio": 87.11,
+          "fim": 87.17,
+          "texto": "estou"
+        },
+        {
+          "inicio": 87.17,
+          "fim": 87.35,
+          "texto": "dizendo,"
+        },
+        {
+          "inicio": 87.45,
+          "fim": 87.53,
+          "texto": "são"
+        },
+        {
+          "inicio": 87.53,
+          "fim": 87.91,
+          "texto": "caminhos"
+        },
+        {
+          "inicio": 87.91,
+          "fim": 88.27,
+          "texto": "diferentes"
+        },
+        {
+          "inicio": 88.27,
+          "fim": 88.53,
+          "texto": "para"
+        },
+        {
+          "inicio": 88.53,
+          "fim": 88.75,
+          "texto": "chegar"
+        },
+        {
+          "inicio": 88.75,
+          "fim": 88.93,
+          "texto": "ao"
+        },
+        {
+          "inicio": 88.93,
+          "fim": 89.07,
+          "texto": "mesmo"
+        },
+        {
+          "inicio": 89.07,
+          "fim": 89.81,
+          "texto": "objetivo."
+        }
+      ]
+    },
+    {
+      "inicio": 90.23,
+      "fim": 93.87,
+      "texto": "Então, esses problemas você acha que não é da esquerda em si, é do governo do PT.",
+      "palavras": [
+        {
+          "inicio": 90.23,
+          "fim": 90.39,
+          "texto": "Então,"
+        },
+        {
+          "inicio": 90.41,
+          "fim": 90.57,
+          "texto": "esses"
+        },
+        {
+          "inicio": 90.57,
+          "fim": 91.01,
+          "texto": "problemas"
+        },
+        {
+          "inicio": 91.01,
+          "fim": 91.27,
+          "texto": "você"
+        },
+        {
+          "inicio": 91.27,
+          "fim": 91.43,
+          "texto": "acha"
+        },
+        {
+          "inicio": 91.43,
+          "fim": 91.65,
+          "texto": "que"
+        },
+        {
+          "inicio": 91.65,
+          "fim": 91.77,
+          "texto": "não"
+        },
+        {
+          "inicio": 91.77,
+          "fim": 91.89,
+          "texto": "é"
+        },
+        {
+          "inicio": 91.89,
+          "fim": 91.97,
+          "texto": "da"
+        },
+        {
+          "inicio": 91.97,
+          "fim": 92.41,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 92.41,
+          "fim": 92.51,
+          "texto": "em"
+        },
+        {
+          "inicio": 92.51,
+          "fim": 92.73,
+          "texto": "si,"
+        },
+        {
+          "inicio": 92.87,
+          "fim": 92.97,
+          "texto": "é"
+        },
+        {
+          "inicio": 92.97,
+          "fim": 93.09,
+          "texto": "do"
+        },
+        {
+          "inicio": 93.09,
+          "fim": 93.45,
+          "texto": "governo"
+        },
+        {
+          "inicio": 93.45,
+          "fim": 93.71,
+          "texto": "do"
+        },
+        {
+          "inicio": 93.71,
+          "fim": 93.87,
+          "texto": "PT."
+        }
+      ]
+    },
+    {
+      "inicio": 94.83,
+      "fim": 98.05,
+      "texto": "O PT é o ícone da esquerda brasileira, por isso que a gente cita o PT.",
+      "palavras": [
+        {
+          "inicio": 94.83,
+          "fim": 95.27,
+          "texto": "O"
+        },
+        {
+          "inicio": 95.27,
+          "fim": 95.49,
+          "texto": "PT"
+        },
+        {
+          "inicio": 95.49,
+          "fim": 95.71,
+          "texto": "é"
+        },
+        {
+          "inicio": 95.71,
+          "fim": 95.83,
+          "texto": "o"
+        },
+        {
+          "inicio": 95.83,
+          "fim": 95.99,
+          "texto": "ícone"
+        },
+        {
+          "inicio": 95.99,
+          "fim": 96.19,
+          "texto": "da"
+        },
+        {
+          "inicio": 96.19,
+          "fim": 96.49,
+          "texto": "esquerda"
+        },
+        {
+          "inicio": 96.49,
+          "fim": 97.01,
+          "texto": "brasileira,"
+        },
+        {
+          "inicio": 97.01,
+          "fim": 97.13,
+          "texto": "por"
+        },
+        {
+          "inicio": 97.13,
+          "fim": 97.27,
+          "texto": "isso"
+        },
+        {
+          "inicio": 97.27,
+          "fim": 97.35,
+          "texto": "que"
+        },
+        {
+          "inicio": 97.35,
+          "fim": 97.39,
+          "texto": "a"
+        },
+        {
+          "inicio": 97.39,
+          "fim": 97.51,
+          "texto": "gente"
+        },
+        {
+          "inicio": 97.51,
+          "fim": 97.71,
+          "texto": "cita"
+        },
+        {
+          "inicio": 97.71,
+          "fim": 97.79,
+          "texto": "o"
+        },
+        {
+          "inicio": 97.79,
+          "fim": 98.05,
+          "texto": "PT."
+        }
+      ]
+    },
+    {
+      "inicio": 98.23,
+      "fim": 102.61,
+      "texto": "O Lula está terminando o terceiro mandato dele, mas já teve o mandato da sucessora dele,",
+      "palavras": [
+        {
+          "inicio": 98.23,
+          "fim": 98.27,
+          "texto": "O"
+        },
+        {
+          "inicio": 98.27,
+          "fim": 98.65,
+          "texto": "Lula"
+        },
+        {
+          "inicio": 98.65,
+          "fim": 98.91,
+          "texto": "está"
+        },
+        {
+          "inicio": 98.91,
+          "fim": 99.29,
+          "texto": "terminando"
+        },
+        {
+          "inicio": 99.29,
+          "fim": 99.43,
+          "texto": "o"
+        },
+        {
+          "inicio": 99.43,
+          "fim": 99.73,
+          "texto": "terceiro"
+        },
+        {
+          "inicio": 99.73,
+          "fim": 100.13,
+          "texto": "mandato"
+        },
+        {
+          "inicio": 100.13,
+          "fim": 100.53,
+          "texto": "dele,"
+        },
+        {
+          "inicio": 100.63,
+          "fim": 100.73,
+          "texto": "mas"
+        },
+        {
+          "inicio": 100.73,
+          "fim": 100.91,
+          "texto": "já"
+        },
+        {
+          "inicio": 100.91,
+          "fim": 101.07,
+          "texto": "teve"
+        },
+        {
+          "inicio": 101.07,
+          "fim": 101.15,
+          "texto": "o"
+        },
+        {
+          "inicio": 101.15,
+          "fim": 101.47,
+          "texto": "mandato"
+        },
+        {
+          "inicio": 101.47,
+          "fim": 101.65,
+          "texto": "da"
+        },
+        {
+          "inicio": 101.65,
+          "fim": 102.31,
+          "texto": "sucessora"
+        },
+        {
+          "inicio": 102.31,
+          "fim": 102.61,
+          "texto": "dele,"
+        }
+      ]
+    },
+    {
+      "inicio": 102.97,
+      "fim": 105.55,
+      "texto": "um e meio, pela metade, o segundo mandato dela.",
+      "palavras": [
+        {
+          "inicio": 102.97,
+          "fim": 103.19,
+          "texto": "um"
+        },
+        {
+          "inicio": 103.19,
+          "fim": 103.31,
+          "texto": "e"
+        },
+        {
+          "inicio": 103.31,
+          "fim": 103.57,
+          "texto": "meio,"
+        },
+        {
+          "inicio": 103.69,
+          "fim": 103.97,
+          "texto": "pela"
+        },
+        {
+          "inicio": 103.97,
+          "fim": 104.45,
+          "texto": "metade,"
+        },
+        {
+          "inicio": 104.61,
+          "fim": 104.67,
+          "texto": "o"
+        },
+        {
+          "inicio": 104.67,
+          "fim": 104.87,
+          "texto": "segundo"
+        },
+        {
+          "inicio": 104.87,
+          "fim": 105.27,
+          "texto": "mandato"
+        },
+        {
+          "inicio": 105.27,
+          "fim": 105.55,
+          "texto": "dela."
+        }
+      ]
+    },
+    {
+      "inicio": 105.55,
+      "fim": 110.59,
+      "texto": "Então já são quase 20 anos do petismo no poder e não conseguiram melhorar o Brasil.",
+      "palavras": [
+        {
+          "inicio": 105.55,
+          "fim": 105.77,
+          "texto": "Então"
+        },
+        {
+          "inicio": 105.77,
+          "fim": 105.95,
+          "texto": "já"
+        },
+        {
+          "inicio": 105.95,
+          "fim": 106.13,
+          "texto": "são"
+        },
+        {
+          "inicio": 106.13,
+          "fim": 106.37,
+          "texto": "quase"
+        },
+        {
+          "inicio": 106.37,
+          "fim": 106.71,
+          "texto": "20"
+        },
+        {
+          "inicio": 106.71,
+          "fim": 107.05,
+          "texto": "anos"
+        },
+        {
+          "inicio": 107.05,
+          "fim": 107.67,
+          "texto": "do"
+        },
+        {
+          "inicio": 107.67,
+          "fim": 108.29,
+          "texto": "petismo"
+        },
+        {
+          "inicio": 108.29,
+          "fim": 108.43,
+          "texto": "no"
+        },
+        {
+          "inicio": 108.43,
+          "fim": 108.75,
+          "texto": "poder"
+        },
+        {
+          "inicio": 108.75,
+          "fim": 109.21,
+          "texto": "e"
+        },
+        {
+          "inicio": 109.21,
+          "fim": 109.41,
+          "texto": "não"
+        },
+        {
+          "inicio": 109.41,
+          "fim": 109.89,
+          "texto": "conseguiram"
+        },
+        {
+          "inicio": 109.89,
+          "fim": 110.21,
+          "texto": "melhorar"
+        },
+        {
+          "inicio": 110.21,
+          "fim": 110.31,
+          "texto": "o"
+        },
+        {
+          "inicio": 110.31,
+          "fim": 110.59,
+          "texto": "Brasil."
+        }
+      ]
+    },
+    {
+      "inicio": 111.09,
+      "fim": 115.03,
+      "texto": "Quer dizer, quem tinha cinco anos de idade quando você elegeu a primeira vez,",
+      "palavras": [
+        {
+          "inicio": 111.09,
+          "fim": 111.15,
+          "texto": "Quer"
+        },
+        {
+          "inicio": 111.15,
+          "fim": 111.29,
+          "texto": "dizer,"
+        },
+        {
+          "inicio": 111.39,
+          "fim": 111.55,
+          "texto": "quem"
+        },
+        {
+          "inicio": 111.55,
+          "fim": 111.83,
+          "texto": "tinha"
+        },
+        {
+          "inicio": 111.83,
+          "fim": 112.95,
+          "texto": "cinco"
+        },
+        {
+          "inicio": 112.95,
+          "fim": 113.19,
+          "texto": "anos"
+        },
+        {
+          "inicio": 113.19,
+          "fim": 113.33,
+          "texto": "de"
+        },
+        {
+          "inicio": 113.33,
+          "fim": 113.55,
+          "texto": "idade"
+        },
+        {
+          "inicio": 113.55,
+          "fim": 113.73,
+          "texto": "quando"
+        },
+        {
+          "inicio": 113.73,
+          "fim": 114.21,
+          "texto": "você"
+        },
+        {
+          "inicio": 114.21,
+          "fim": 114.49,
+          "texto": "elegeu"
+        },
+        {
+          "inicio": 114.49,
+          "fim": 114.55,
+          "texto": "a"
+        },
+        {
+          "inicio": 114.55,
+          "fim": 114.71,
+          "texto": "primeira"
+        },
+        {
+          "inicio": 114.71,
+          "fim": 115.03,
+          "texto": "vez,"
+        }
+      ]
+    },
+    {
+      "inicio": 115.17,
+      "fim": 119.67,
+      "texto": "está com 25 hoje e a gente não vê um Brasil diferente de 20 anos atrás.",
+      "palavras": [
+        {
+          "inicio": 115.17,
+          "fim": 115.31,
+          "texto": "está"
+        },
+        {
+          "inicio": 115.31,
+          "fim": 115.47,
+          "texto": "com"
+        },
+        {
+          "inicio": 115.47,
+          "fim": 115.99,
+          "texto": "25"
+        },
+        {
+          "inicio": 115.99,
+          "fim": 116.75,
+          "texto": "hoje"
+        },
+        {
+          "inicio": 116.75,
+          "fim": 117.27,
+          "texto": "e"
+        },
+        {
+          "inicio": 117.27,
+          "fim": 117.51,
+          "texto": "a"
+        },
+        {
+          "inicio": 117.51,
+          "fim": 117.67,
+          "texto": "gente"
+        },
+        {
+          "inicio": 117.67,
+          "fim": 117.87,
+          "texto": "não"
+        },
+        {
+          "inicio": 117.87,
+          "fim": 118.03,
+          "texto": "vê"
+        },
+        {
+          "inicio": 118.03,
+          "fim": 118.13,
+          "texto": "um"
+        },
+        {
+          "inicio": 118.13,
+          "fim": 118.33,
+          "texto": "Brasil"
+        },
+        {
+          "inicio": 118.33,
+          "fim": 118.71,
+          "texto": "diferente"
+        },
+        {
+          "inicio": 118.71,
+          "fim": 118.95,
+          "texto": "de"
+        },
+        {
+          "inicio": 118.95,
+          "fim": 119.15,
+          "texto": "20"
+        },
+        {
+          "inicio": 119.15,
+          "fim": 119.37,
+          "texto": "anos"
+        },
+        {
+          "inicio": 119.37,
+          "fim": 119.67,
+          "texto": "atrás."
+        }
+      ]
+    },
+    {
+      "inicio": 120.29,
+      "fim": 122.61,
+      "texto": "Então é isso que eu digo, associa o PT por causa disso.",
+      "palavras": [
+        {
+          "inicio": 120.29,
+          "fim": 120.43,
+          "texto": "Então"
+        },
+        {
+          "inicio": 120.43,
+          "fim": 120.49,
+          "texto": "é"
+        },
+        {
+          "inicio": 120.49,
+          "fim": 120.63,
+          "texto": "isso"
+        },
+        {
+          "inicio": 120.63,
+          "fim": 120.73,
+          "texto": "que"
+        },
+        {
+          "inicio": 120.73,
+          "fim": 120.79,
+          "texto": "eu"
+        },
+        {
+          "inicio": 120.79,
+          "fim": 120.97,
+          "texto": "digo,"
+        },
+        {
+          "inicio": 121.13,
+          "fim": 121.55,
+          "texto": "associa"
+        },
+        {
+          "inicio": 121.55,
+          "fim": 121.67,
+          "texto": "o"
+        },
+        {
+          "inicio": 121.67,
+          "fim": 121.81,
+          "texto": "PT"
+        },
+        {
+          "inicio": 121.81,
+          "fim": 122.03,
+          "texto": "por"
+        },
+        {
+          "inicio": 122.03,
+          "fim": 122.19,
+          "texto": "causa"
+        },
+        {
+          "inicio": 122.19,
+          "fim": 122.61,
+          "texto": "disso."
+        }
+      ]
+    },
+    {
+      "inicio": 123.17,
+      "fim": 125.69,
+      "texto": "Esquerda e direita são caminhos políticos diferentes.",
+      "palavras": [
+        {
+          "inicio": 123.17,
+          "fim": 123.61,
+          "texto": "Esquerda"
+        },
+        {
+          "inicio": 123.61,
+          "fim": 123.71,
+          "texto": "e"
+        },
+        {
+          "inicio": 123.71,
+          "fim": 123.97,
+          "texto": "direita"
+        },
+        {
+          "inicio": 123.97,
+          "fim": 124.17,
+          "texto": "são"
+        },
+        {
+          "inicio": 124.17,
+          "fim": 124.57,
+          "texto": "caminhos"
+        },
+        {
+          "inicio": 124.57,
+          "fim": 125.27,
+          "texto": "políticos"
+        },
+        {
+          "inicio": 125.27,
+          "fim": 125.69,
+          "texto": "diferentes."
+        }
+      ]
+    },
+    {
+      "inicio": 126.05,
+      "fim": 129.97,
+      "texto": "Eu sou digita, o PT é um dos partidos da esquerda.",
+      "palavras": [
+        {
+          "inicio": 126.05,
+          "fim": 126.17,
+          "texto": "Eu"
+        },
+        {
+          "inicio": 126.17,
+          "fim": 126.35,
+          "texto": "sou"
+        },
+        {
+          "inicio": 126.35,
+          "fim": 126.77,
+          "texto": "digita,"
+        },
+        {
+          "inicio": 127.45,
+          "fim": 127.57,
+          "texto": "o"
+        },
+        {
+          "inicio": 127.57,
+          "fim": 127.85,
+          "texto": "PT"
+        },
+        {
+          "inicio": 127.85,
+          "fim": 128.47,
+          "texto": "é"
+        },
+        {
+          "inicio": 128.47,
+          "fim": 128.65,
+          "texto": "um"
+        },
+        {
+          "inicio": 128.65,
+          "fim": 128.75,
+          "texto": "dos"
+        },
+        {
+          "inicio": 128.75,
+          "fim": 129.21,
+          "texto": "partidos"
+        },
+        {
+          "inicio": 129.21,
+          "fim": 129.43,
+          "texto": "da"
+        },
+        {
+          "inicio": 129.43,
+          "fim": 129.97,
+          "texto": "esquerda."
+        }
+      ]
+    },
+    {
+      "inicio": 130.17,
+      "fim": 134.23,
+      "texto": "Mas especificamente quando eu falo do PT é porque o petismo não deu certo no Brasil.",
+      "palavras": [
+        {
+          "inicio": 130.17,
+          "fim": 130.49,
+          "texto": "Mas"
+        },
+        {
+          "inicio": 130.49,
+          "fim": 131.31,
+          "texto": "especificamente"
+        },
+        {
+          "inicio": 131.31,
+          "fim": 131.49,
+          "texto": "quando"
+        },
+        {
+          "inicio": 131.49,
+          "fim": 131.57,
+          "texto": "eu"
+        },
+        {
+          "inicio": 131.57,
+          "fim": 131.79,
+          "texto": "falo"
+        },
+        {
+          "inicio": 131.79,
+          "fim": 131.89,
+          "texto": "do"
+        },
+        {
+          "inicio": 131.89,
+          "fim": 132.13,
+          "texto": "PT"
+        },
+        {
+          "inicio": 132.13,
+          "fim": 132.29,
+          "texto": "é"
+        },
+        {
+          "inicio": 132.29,
+          "fim": 132.47,
+          "texto": "porque"
+        },
+        {
+          "inicio": 132.47,
+          "fim": 132.59,
+          "texto": "o"
+        },
+        {
+          "inicio": 132.59,
+          "fim": 133.19,
+          "texto": "petismo"
+        },
+        {
+          "inicio": 133.19,
+          "fim": 133.37,
+          "texto": "não"
+        },
+        {
+          "inicio": 133.37,
+          "fim": 133.51,
+          "texto": "deu"
+        },
+        {
+          "inicio": 133.51,
+          "fim": 133.75,
+          "texto": "certo"
+        },
+        {
+          "inicio": 133.75,
+          "fim": 133.97,
+          "texto": "no"
+        },
+        {
+          "inicio": 133.97,
+          "fim": 134.23,
+          "texto": "Brasil."
+        }
+      ]
+    },
+    {
+      "inicio": 134.23,
+      "fim": 137.35,
+      "texto": "O que eles pregam não deu certo na minha visão, né, o respeito que eu pensei diferente.",
+      "palavras": [
+        {
+          "inicio": 134.23,
+          "fim": 134.37,
+          "texto": "O"
+        },
+        {
+          "inicio": 134.37,
+          "fim": 134.47,
+          "texto": "que"
+        },
+        {
+          "inicio": 134.47,
+          "fim": 134.61,
+          "texto": "eles"
+        },
+        {
+          "inicio": 134.61,
+          "fim": 134.95,
+          "texto": "pregam"
+        },
+        {
+          "inicio": 134.95,
+          "fim": 135.11,
+          "texto": "não"
+        },
+        {
+          "inicio": 135.11,
+          "fim": 135.19,
+          "texto": "deu"
+        },
+        {
+          "inicio": 135.19,
+          "fim": 135.41,
+          "texto": "certo"
+        },
+        {
+          "inicio": 135.41,
+          "fim": 135.61,
+          "texto": "na"
+        },
+        {
+          "inicio": 135.61,
+          "fim": 135.77,
+          "texto": "minha"
+        },
+        {
+          "inicio": 135.77,
+          "fim": 136.07,
+          "texto": "visão,"
+        },
+        {
+          "inicio": 136.15,
+          "fim": 136.25,
+          "texto": "né,"
+        },
+        {
+          "inicio": 136.25,
+          "fim": 136.29,
+          "texto": "o"
+        },
+        {
+          "inicio": 136.29,
+          "fim": 136.61,
+          "texto": "respeito"
+        },
+        {
+          "inicio": 136.61,
+          "fim": 136.71,
+          "texto": "que"
+        },
+        {
+          "inicio": 136.71,
+          "fim": 136.75,
+          "texto": "eu"
+        },
+        {
+          "inicio": 136.75,
+          "fim": 137.03,
+          "texto": "pensei"
+        },
+        {
+          "inicio": 137.03,
+          "fim": 137.35,
+          "texto": "diferente."
+        }
+      ]
+    },
+    {
+      "inicio": 137.57,
+      "fim": 140.97,
+      "texto": "E o que você acha desse extremismo que está tendo hoje em dia no Brasil?",
+      "palavras": [
+        {
+          "inicio": 137.57,
+          "fim": 137.65,
+          "texto": "E"
+        },
+        {
+          "inicio": 137.65,
+          "fim": 137.75,
+          "texto": "o"
+        },
+        {
+          "inicio": 137.75,
+          "fim": 137.77,
+          "texto": "que"
+        },
+        {
+          "inicio": 137.77,
+          "fim": 138.07,
+          "texto": "você"
+        },
+        {
+          "inicio": 138.07,
+          "fim": 138.33,
+          "texto": "acha"
+        },
+        {
+          "inicio": 138.33,
+          "fim": 138.61,
+          "texto": "desse"
+        },
+        {
+          "inicio": 138.61,
+          "fim": 139.53,
+          "texto": "extremismo"
+        },
+        {
+          "inicio": 139.53,
+          "fim": 139.89,
+          "texto": "que"
+        },
+        {
+          "inicio": 139.89,
+          "fim": 140.03,
+          "texto": "está"
+        },
+        {
+          "inicio": 140.03,
+          "fim": 140.29,
+          "texto": "tendo"
+        },
+        {
+          "inicio": 140.29,
+          "fim": 140.45,
+          "texto": "hoje"
+        },
+        {
+          "inicio": 140.45,
+          "fim": 140.49,
+          "texto": "em"
+        },
+        {
+          "inicio": 140.49,
+          "fim": 140.63,
+          "texto": "dia"
+        },
+        {
+          "inicio": 140.63,
+          "fim": 140.75,
+          "texto": "no"
+        },
+        {
+          "inicio": 140.75,
+          "fim": 140.97,
+          "texto": "Brasil?"
+        }
+      ]
+    },
+    {
+      "inicio": 141.51,
+      "fim": 145.57,
+      "texto": "Estremismo é ruim e o extremismo é associado a essa polarização extrema.",
+      "palavras": [
+        {
+          "inicio": 141.51,
+          "fim": 141.95,
+          "texto": "Estremismo"
+        },
+        {
+          "inicio": 141.95,
+          "fim": 142.07,
+          "texto": "é"
+        },
+        {
+          "inicio": 142.07,
+          "fim": 142.33,
+          "texto": "ruim"
+        },
+        {
+          "inicio": 142.33,
+          "fim": 142.55,
+          "texto": "e"
+        },
+        {
+          "inicio": 142.55,
+          "fim": 142.65,
+          "texto": "o"
+        },
+        {
+          "inicio": 142.65,
+          "fim": 143.29,
+          "texto": "extremismo"
+        },
+        {
+          "inicio": 143.29,
+          "fim": 143.39,
+          "texto": "é"
+        },
+        {
+          "inicio": 143.39,
+          "fim": 143.95,
+          "texto": "associado"
+        },
+        {
+          "inicio": 143.95,
+          "fim": 144.13,
+          "texto": "a"
+        },
+        {
+          "inicio": 144.13,
+          "fim": 144.33,
+          "texto": "essa"
+        },
+        {
+          "inicio": 144.33,
+          "fim": 145.11,
+          "texto": "polarização"
+        },
+        {
+          "inicio": 145.11,
+          "fim": 145.57,
+          "texto": "extrema."
+        }
+      ]
+    },
+    {
+      "inicio": 145.73,
+      "fim": 151.31,
+      "texto": "As pessoas não podem se odiar por pensar formas diferentes de alcançar o progresso.",
+      "palavras": [
+        {
+          "inicio": 145.73,
+          "fim": 145.73,
+          "texto": "As"
+        },
+        {
+          "inicio": 145.73,
+          "fim": 145.91,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 145.91,
+          "fim": 146.09,
+          "texto": "não"
+        },
+        {
+          "inicio": 146.09,
+          "fim": 146.37,
+          "texto": "podem"
+        },
+        {
+          "inicio": 146.37,
+          "fim": 146.57,
+          "texto": "se"
+        },
+        {
+          "inicio": 146.57,
+          "fim": 146.89,
+          "texto": "odiar"
+        },
+        {
+          "inicio": 146.89,
+          "fim": 147.75,
+          "texto": "por"
+        },
+        {
+          "inicio": 147.75,
+          "fim": 148.67,
+          "texto": "pensar"
+        },
+        {
+          "inicio": 148.67,
+          "fim": 149.23,
+          "texto": "formas"
+        },
+        {
+          "inicio": 149.23,
+          "fim": 149.71,
+          "texto": "diferentes"
+        },
+        {
+          "inicio": 149.71,
+          "fim": 150.07,
+          "texto": "de"
+        },
+        {
+          "inicio": 150.07,
+          "fim": 150.53,
+          "texto": "alcançar"
+        },
+        {
+          "inicio": 150.53,
+          "fim": 150.83,
+          "texto": "o"
+        },
+        {
+          "inicio": 150.83,
+          "fim": 151.31,
+          "texto": "progresso."
+        }
+      ]
+    },
+    {
+      "inicio": 151.89,
+      "fim": 154.21,
+      "texto": "As pessoas têm que respeitar as opiniões diferentes.",
+      "palavras": [
+        {
+          "inicio": 151.89,
+          "fim": 152.01,
+          "texto": "As"
+        },
+        {
+          "inicio": 152.01,
+          "fim": 152.35,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 152.35,
+          "fim": 152.59,
+          "texto": "têm"
+        },
+        {
+          "inicio": 152.59,
+          "fim": 152.67,
+          "texto": "que"
+        },
+        {
+          "inicio": 152.67,
+          "fim": 153.33,
+          "texto": "respeitar"
+        },
+        {
+          "inicio": 153.33,
+          "fim": 153.53,
+          "texto": "as"
+        },
+        {
+          "inicio": 153.53,
+          "fim": 153.83,
+          "texto": "opiniões"
+        },
+        {
+          "inicio": 153.83,
+          "fim": 154.21,
+          "texto": "diferentes."
+        }
+      ]
+    },
+    {
+      "inicio": 154.69,
+      "fim": 158.97,
+      "texto": "Também não podem se odiar por causa de um político ou outro que a gente defende nesse momento ou outro.",
+      "palavras": [
+        {
+          "inicio": 154.69,
+          "fim": 154.97,
+          "texto": "Também"
+        },
+        {
+          "inicio": 154.97,
+          "fim": 155.07,
+          "texto": "não"
+        },
+        {
+          "inicio": 155.07,
+          "fim": 155.55,
+          "texto": "podem"
+        },
+        {
+          "inicio": 155.55,
+          "fim": 155.73,
+          "texto": "se"
+        },
+        {
+          "inicio": 155.73,
+          "fim": 155.99,
+          "texto": "odiar"
+        },
+        {
+          "inicio": 155.99,
+          "fim": 156.17,
+          "texto": "por"
+        },
+        {
+          "inicio": 156.17,
+          "fim": 156.25,
+          "texto": "causa"
+        },
+        {
+          "inicio": 156.25,
+          "fim": 156.41,
+          "texto": "de"
+        },
+        {
+          "inicio": 156.41,
+          "fim": 156.43,
+          "texto": "um"
+        },
+        {
+          "inicio": 156.43,
+          "fim": 156.81,
+          "texto": "político"
+        },
+        {
+          "inicio": 156.81,
+          "fim": 156.99,
+          "texto": "ou"
+        },
+        {
+          "inicio": 156.99,
+          "fim": 157.25,
+          "texto": "outro"
+        },
+        {
+          "inicio": 157.25,
+          "fim": 157.39,
+          "texto": "que"
+        },
+        {
+          "inicio": 157.39,
+          "fim": 157.43,
+          "texto": "a"
+        },
+        {
+          "inicio": 157.43,
+          "fim": 157.55,
+          "texto": "gente"
+        },
+        {
+          "inicio": 157.55,
+          "fim": 157.99,
+          "texto": "defende"
+        },
+        {
+          "inicio": 157.99,
+          "fim": 158.23,
+          "texto": "nesse"
+        },
+        {
+          "inicio": 158.23,
+          "fim": 158.49,
+          "texto": "momento"
+        },
+        {
+          "inicio": 158.49,
+          "fim": 158.71,
+          "texto": "ou"
+        },
+        {
+          "inicio": 158.71,
+          "fim": 158.97,
+          "texto": "outro."
+        }
+      ]
+    },
+    {
+      "inicio": 159.39,
+      "fim": 160.53,
+      "texto": "A gente tem que ter diálogo.",
+      "palavras": [
+        {
+          "inicio": 159.39,
+          "fim": 159.51,
+          "texto": "A"
+        },
+        {
+          "inicio": 159.51,
+          "fim": 159.67,
+          "texto": "gente"
+        },
+        {
+          "inicio": 159.67,
+          "fim": 159.83,
+          "texto": "tem"
+        },
+        {
+          "inicio": 159.83,
+          "fim": 159.99,
+          "texto": "que"
+        },
+        {
+          "inicio": 159.99,
+          "fim": 160.11,
+          "texto": "ter"
+        },
+        {
+          "inicio": 160.11,
+          "fim": 160.53,
+          "texto": "diálogo."
+        }
+      ]
+    },
+    {
+      "inicio": 160.95,
+      "fim": 162.77,
+      "texto": "O diálogo faz a sociedade avançar.",
+      "palavras": [
+        {
+          "inicio": 160.95,
+          "fim": 161.07,
+          "texto": "O"
+        },
+        {
+          "inicio": 161.07,
+          "fim": 161.41,
+          "texto": "diálogo"
+        },
+        {
+          "inicio": 161.41,
+          "fim": 161.65,
+          "texto": "faz"
+        },
+        {
+          "inicio": 161.65,
+          "fim": 161.77,
+          "texto": "a"
+        },
+        {
+          "inicio": 161.77,
+          "fim": 162.05,
+          "texto": "sociedade"
+        },
+        {
+          "inicio": 162.05,
+          "fim": 162.77,
+          "texto": "avançar."
+        }
+      ]
+    },
+    {
+      "inicio": 162.77,
+      "fim": 166.47,
+      "texto": "o diálogo faz as pessoas interagirem e é o todo que ajuda.",
+      "palavras": [
+        {
+          "inicio": 162.77,
+          "fim": 163.15,
+          "texto": "o"
+        },
+        {
+          "inicio": 163.15,
+          "fim": 163.49,
+          "texto": "diálogo"
+        },
+        {
+          "inicio": 163.49,
+          "fim": 163.69,
+          "texto": "faz"
+        },
+        {
+          "inicio": 163.69,
+          "fim": 163.83,
+          "texto": "as"
+        },
+        {
+          "inicio": 163.83,
+          "fim": 164.25,
+          "texto": "pessoas"
+        },
+        {
+          "inicio": 164.25,
+          "fim": 165.05,
+          "texto": "interagirem"
+        },
+        {
+          "inicio": 165.05,
+          "fim": 165.19,
+          "texto": "e"
+        },
+        {
+          "inicio": 165.19,
+          "fim": 165.33,
+          "texto": "é"
+        },
+        {
+          "inicio": 165.33,
+          "fim": 165.55,
+          "texto": "o"
+        },
+        {
+          "inicio": 165.55,
+          "fim": 165.87,
+          "texto": "todo"
+        },
+        {
+          "inicio": 165.87,
+          "fim": 166.11,
+          "texto": "que"
+        },
+        {
+          "inicio": 166.11,
+          "fim": 166.47,
+          "texto": "ajuda."
+        }
+      ]
+    },
+    {
+      "inicio": 166.83,
+      "fim": 170.47,
+      "texto": "Eu sou favorável ao debate, então extremismo não é legal.",
+      "palavras": [
+        {
+          "inicio": 166.83,
+          "fim": 167.01,
+          "texto": "Eu"
+        },
+        {
+          "inicio": 167.01,
+          "fim": 167.15,
+          "texto": "sou"
+        },
+        {
+          "inicio": 167.15,
+          "fim": 167.73,
+          "texto": "favorável"
+        },
+        {
+          "inicio": 167.73,
+          "fim": 167.95,
+          "texto": "ao"
+        },
+        {
+          "inicio": 167.95,
+          "fim": 168.27,
+          "texto": "debate,"
+        },
+        {
+          "inicio": 168.53,
+          "fim": 169.19,
+          "texto": "então"
+        },
+        {
+          "inicio": 169.19,
+          "fim": 169.79,
+          "texto": "extremismo"
+        },
+        {
+          "inicio": 169.79,
+          "fim": 170.01,
+          "texto": "não"
+        },
+        {
+          "inicio": 170.01,
+          "fim": 170.17,
+          "texto": "é"
+        },
+        {
+          "inicio": 170.17,
+          "fim": 170.47,
+          "texto": "legal."
+        }
+      ]
+    },
+    {
+      "inicio": 170.99,
+      "fim": 174.17,
+      "texto": "E o que tem que acontecer nessa eleição para mudar o Brasil?",
+      "palavras": [
+        {
+          "inicio": 170.99,
+          "fim": 171.23,
+          "texto": "E"
+        },
+        {
+          "inicio": 171.23,
+          "fim": 171.29,
+          "texto": "o"
+        },
+        {
+          "inicio": 171.29,
+          "fim": 171.33,
+          "texto": "que"
+        },
+        {
+          "inicio": 171.33,
+          "fim": 171.57,
+          "texto": "tem"
+        },
+        {
+          "inicio": 171.57,
+          "fim": 171.63,
+          "texto": "que"
+        },
+        {
+          "inicio": 171.63,
+          "fim": 172.03,
+          "texto": "acontecer"
+        },
+        {
+          "inicio": 172.03,
+          "fim": 172.61,
+          "texto": "nessa"
+        },
+        {
+          "inicio": 172.61,
+          "fim": 173.09,
+          "texto": "eleição"
+        },
+        {
+          "inicio": 173.09,
+          "fim": 173.59,
+          "texto": "para"
+        },
+        {
+          "inicio": 173.59,
+          "fim": 173.85,
+          "texto": "mudar"
+        },
+        {
+          "inicio": 173.85,
+          "fim": 173.95,
+          "texto": "o"
+        },
+        {
+          "inicio": 173.95,
+          "fim": 174.17,
+          "texto": "Brasil?"
+        }
+      ]
+    },
+    {
+      "inicio": 174.65,
+      "fim": 176.17,
+      "texto": "Eu acho que a gente precisa tirar o PT do poder.",
+      "palavras": [
+        {
+          "inicio": 174.65,
+          "fim": 174.83,
+          "texto": "Eu"
+        },
+        {
+          "inicio": 174.83,
+          "fim": 175.01,
+          "texto": "acho"
+        },
+        {
+          "inicio": 175.01,
+          "fim": 175.09,
+          "texto": "que"
+        },
+        {
+          "inicio": 175.09,
+          "fim": 175.11,
+          "texto": "a"
+        },
+        {
+          "inicio": 175.11,
+          "fim": 175.17,
+          "texto": "gente"
+        },
+        {
+          "inicio": 175.17,
+          "fim": 175.31,
+          "texto": "precisa"
+        },
+        {
+          "inicio": 175.31,
+          "fim": 175.49,
+          "texto": "tirar"
+        },
+        {
+          "inicio": 175.49,
+          "fim": 175.65,
+          "texto": "o"
+        },
+        {
+          "inicio": 175.65,
+          "fim": 175.77,
+          "texto": "PT"
+        },
+        {
+          "inicio": 175.77,
+          "fim": 175.95,
+          "texto": "do"
+        },
+        {
+          "inicio": 175.95,
+          "fim": 176.17,
+          "texto": "poder."
+        }
+      ]
+    },
+    {
+      "inicio": 176.33,
+      "fim": 178.61,
+      "texto": "O PT não deu certo, a gente tem que buscar outro caminho.",
+      "palavras": [
+        {
+          "inicio": 176.33,
+          "fim": 176.33,
+          "texto": "O"
+        },
+        {
+          "inicio": 176.33,
+          "fim": 176.49,
+          "texto": "PT"
+        },
+        {
+          "inicio": 176.49,
+          "fim": 176.73,
+          "texto": "não"
+        },
+        {
+          "inicio": 176.73,
+          "fim": 176.83,
+          "texto": "deu"
+        },
+        {
+          "inicio": 176.83,
+          "fim": 177.21,
+          "texto": "certo,"
+        },
+        {
+          "inicio": 177.35,
+          "fim": 177.35,
+          "texto": "a"
+        },
+        {
+          "inicio": 177.35,
+          "fim": 177.41,
+          "texto": "gente"
+        },
+        {
+          "inicio": 177.41,
+          "fim": 177.53,
+          "texto": "tem"
+        },
+        {
+          "inicio": 177.53,
+          "fim": 177.61,
+          "texto": "que"
+        },
+        {
+          "inicio": 177.61,
+          "fim": 177.81,
+          "texto": "buscar"
+        },
+        {
+          "inicio": 177.81,
+          "fim": 178.23,
+          "texto": "outro"
+        },
+        {
+          "inicio": 178.23,
+          "fim": 178.61,
+          "texto": "caminho."
+        }
+      ]
+    },
+    {
+      "inicio": 179.03,
+      "fim": 181.35,
+      "texto": "Então eu trabalho para tentar eleger Flávio Bolsonaro,",
+      "palavras": [
+        {
+          "inicio": 179.03,
+          "fim": 179.13,
+          "texto": "Então"
+        },
+        {
+          "inicio": 179.13,
+          "fim": 179.31,
+          "texto": "eu"
+        },
+        {
+          "inicio": 179.31,
+          "fim": 179.81,
+          "texto": "trabalho"
+        },
+        {
+          "inicio": 179.81,
+          "fim": 180.07,
+          "texto": "para"
+        },
+        {
+          "inicio": 180.07,
+          "fim": 180.29,
+          "texto": "tentar"
+        },
+        {
+          "inicio": 180.29,
+          "fim": 180.57,
+          "texto": "eleger"
+        },
+        {
+          "inicio": 180.57,
+          "fim": 180.97,
+          "texto": "Flávio"
+        },
+        {
+          "inicio": 180.97,
+          "fim": 181.35,
+          "texto": "Bolsonaro,"
+        }
+      ]
+    },
+    {
+      "inicio": 181.61,
+      "fim": 184.05,
+      "texto": "que eu acho que é o único que consegue tirar o PT do poder.",
+      "palavras": [
+        {
+          "inicio": 181.61,
+          "fim": 181.67,
+          "texto": "que"
+        },
+        {
+          "inicio": 181.67,
+          "fim": 181.75,
+          "texto": "eu"
+        },
+        {
+          "inicio": 181.75,
+          "fim": 181.89,
+          "texto": "acho"
+        },
+        {
+          "inicio": 181.89,
+          "fim": 181.99,
+          "texto": "que"
+        },
+        {
+          "inicio": 181.99,
+          "fim": 182.03,
+          "texto": "é"
+        },
+        {
+          "inicio": 182.03,
+          "fim": 182.09,
+          "texto": "o"
+        },
+        {
+          "inicio": 182.09,
+          "fim": 182.29,
+          "texto": "único"
+        },
+        {
+          "inicio": 182.29,
+          "fim": 182.51,
+          "texto": "que"
+        },
+        {
+          "inicio": 182.51,
+          "fim": 182.99,
+          "texto": "consegue"
+        },
+        {
+          "inicio": 182.99,
+          "fim": 183.27,
+          "texto": "tirar"
+        },
+        {
+          "inicio": 183.27,
+          "fim": 183.39,
+          "texto": "o"
+        },
+        {
+          "inicio": 183.39,
+          "fim": 183.55,
+          "texto": "PT"
+        },
+        {
+          "inicio": 183.55,
+          "fim": 183.73,
+          "texto": "do"
+        },
+        {
+          "inicio": 183.73,
+          "fim": 184.05,
+          "texto": "poder."
+        }
+      ]
+    },
+    {
+      "inicio": 184.31,
+      "fim": 189.55,
+      "texto": "Nesse momento, eu trabalho para me eleger Senadora, 5.5.5 pessoal,",
+      "palavras": [
+        {
+          "inicio": 184.31,
+          "fim": 184.71,
+          "texto": "Nesse"
+        },
+        {
+          "inicio": 184.71,
+          "fim": 185.11,
+          "texto": "momento,"
+        },
+        {
+          "inicio": 185.65,
+          "fim": 186.57,
+          "texto": "eu"
+        },
+        {
+          "inicio": 186.57,
+          "fim": 186.93,
+          "texto": "trabalho"
+        },
+        {
+          "inicio": 186.93,
+          "fim": 187.11,
+          "texto": "para"
+        },
+        {
+          "inicio": 187.11,
+          "fim": 187.21,
+          "texto": "me"
+        },
+        {
+          "inicio": 187.21,
+          "fim": 187.47,
+          "texto": "eleger"
+        },
+        {
+          "inicio": 187.47,
+          "fim": 188.03,
+          "texto": "Senadora,"
+        },
+        {
+          "inicio": 188.29,
+          "fim": 188.57,
+          "texto": "5"
+        },
+        {
+          "inicio": 188.57,
+          "fim": 188.83,
+          "texto": ".5"
+        },
+        {
+          "inicio": 188.83,
+          "fim": 189.21,
+          "texto": ".5"
+        },
+        {
+          "inicio": 189.21,
+          "fim": 189.55,
+          "texto": "pessoal,"
+        }
+      ]
+    },
+    {
+      "inicio": 189.55,
+      "fim": 192.85,
+      "texto": "porque eu acho que as mulheres precisam ter mais representação na política,",
+      "palavras": [
+        {
+          "inicio": 189.55,
+          "fim": 190.21,
+          "texto": "porque"
+        },
+        {
+          "inicio": 190.21,
+          "fim": 190.35,
+          "texto": "eu"
+        },
+        {
+          "inicio": 190.35,
+          "fim": 190.47,
+          "texto": "acho"
+        },
+        {
+          "inicio": 190.47,
+          "fim": 190.55,
+          "texto": "que"
+        },
+        {
+          "inicio": 190.55,
+          "fim": 190.65,
+          "texto": "as"
+        },
+        {
+          "inicio": 190.65,
+          "fim": 190.85,
+          "texto": "mulheres"
+        },
+        {
+          "inicio": 190.85,
+          "fim": 191.35,
+          "texto": "precisam"
+        },
+        {
+          "inicio": 191.35,
+          "fim": 191.47,
+          "texto": "ter"
+        },
+        {
+          "inicio": 191.47,
+          "fim": 191.65,
+          "texto": "mais"
+        },
+        {
+          "inicio": 191.65,
+          "fim": 192.27,
+          "texto": "representação"
+        },
+        {
+          "inicio": 192.27,
+          "fim": 192.43,
+          "texto": "na"
+        },
+        {
+          "inicio": 192.43,
+          "fim": 192.85,
+          "texto": "política,"
+        }
+      ]
+    },
+    {
+      "inicio": 193.33,
+      "fim": 197.31,
+      "texto": "eu acho que o Paraná precisa estar melhor representado no Senado",
+      "palavras": [
+        {
+          "inicio": 193.33,
+          "fim": 193.45,
+          "texto": "eu"
+        },
+        {
+          "inicio": 193.45,
+          "fim": 193.75,
+          "texto": "acho"
+        },
+        {
+          "inicio": 193.75,
+          "fim": 193.91,
+          "texto": "que"
+        },
+        {
+          "inicio": 193.91,
+          "fim": 194.03,
+          "texto": "o"
+        },
+        {
+          "inicio": 194.03,
+          "fim": 194.53,
+          "texto": "Paraná"
+        },
+        {
+          "inicio": 194.53,
+          "fim": 194.81,
+          "texto": "precisa"
+        },
+        {
+          "inicio": 194.81,
+          "fim": 195.09,
+          "texto": "estar"
+        },
+        {
+          "inicio": 195.09,
+          "fim": 195.37,
+          "texto": "melhor"
+        },
+        {
+          "inicio": 195.37,
+          "fim": 196.15,
+          "texto": "representado"
+        },
+        {
+          "inicio": 196.15,
+          "fim": 196.69,
+          "texto": "no"
+        },
+        {
+          "inicio": 196.69,
+          "fim": 197.31,
+          "texto": "Senado"
+        }
+      ]
+    },
+    {
+      "inicio": 197.31,
+      "fim": 203.71,
+      "texto": "e o Senado atual é muito omisso, então a gente precisa trocar o grupo de senadores atuais,",
+      "palavras": [
+        {
+          "inicio": 197.31,
+          "fim": 197.73,
+          "texto": "e"
+        },
+        {
+          "inicio": 197.73,
+          "fim": 197.87,
+          "texto": "o"
+        },
+        {
+          "inicio": 197.87,
+          "fim": 198.39,
+          "texto": "Senado"
+        },
+        {
+          "inicio": 198.39,
+          "fim": 198.81,
+          "texto": "atual"
+        },
+        {
+          "inicio": 198.81,
+          "fim": 198.99,
+          "texto": "é"
+        },
+        {
+          "inicio": 198.99,
+          "fim": 199.19,
+          "texto": "muito"
+        },
+        {
+          "inicio": 199.19,
+          "fim": 199.61,
+          "texto": "omisso,"
+        },
+        {
+          "inicio": 199.73,
+          "fim": 199.83,
+          "texto": "então"
+        },
+        {
+          "inicio": 199.83,
+          "fim": 199.91,
+          "texto": "a"
+        },
+        {
+          "inicio": 199.91,
+          "fim": 199.93,
+          "texto": "gente"
+        },
+        {
+          "inicio": 199.93,
+          "fim": 200.09,
+          "texto": "precisa"
+        },
+        {
+          "inicio": 200.09,
+          "fim": 200.59,
+          "texto": "trocar"
+        },
+        {
+          "inicio": 200.59,
+          "fim": 201.17,
+          "texto": "o"
+        },
+        {
+          "inicio": 201.17,
+          "fim": 202.59,
+          "texto": "grupo"
+        },
+        {
+          "inicio": 202.59,
+          "fim": 202.81,
+          "texto": "de"
+        },
+        {
+          "inicio": 202.81,
+          "fim": 203.21,
+          "texto": "senadores"
+        },
+        {
+          "inicio": 203.21,
+          "fim": 203.71,
+          "texto": "atuais,"
+        }
+      ]
+    },
+    {
+      "inicio": 203.77,
+      "fim": 207.05,
+      "texto": "não é só o Paraná, todos os Estados têm essa incumbença",
+      "palavras": [
+        {
+          "inicio": 203.77,
+          "fim": 203.89,
+          "texto": "não"
+        },
+        {
+          "inicio": 203.89,
+          "fim": 204.09,
+          "texto": "é"
+        },
+        {
+          "inicio": 204.09,
+          "fim": 204.17,
+          "texto": "só"
+        },
+        {
+          "inicio": 204.17,
+          "fim": 204.25,
+          "texto": "o"
+        },
+        {
+          "inicio": 204.25,
+          "fim": 204.59,
+          "texto": "Paraná,"
+        },
+        {
+          "inicio": 204.69,
+          "fim": 204.79,
+          "texto": "todos"
+        },
+        {
+          "inicio": 204.79,
+          "fim": 205.03,
+          "texto": "os"
+        },
+        {
+          "inicio": 205.03,
+          "fim": 205.25,
+          "texto": "Estados"
+        },
+        {
+          "inicio": 205.25,
+          "fim": 205.53,
+          "texto": "têm"
+        },
+        {
+          "inicio": 205.53,
+          "fim": 205.79,
+          "texto": "essa"
+        },
+        {
+          "inicio": 205.79,
+          "fim": 207.05,
+          "texto": "incumbença"
+        }
+      ]
+    },
+    {
+      "inicio": 207.05,
+      "fim": 210.89,
+      "texto": "para a gente poder cobrar do novo Senado o que esse Senado não fez.",
+      "palavras": [
+        {
+          "inicio": 207.05,
+          "fim": 207.45,
+          "texto": "para"
+        },
+        {
+          "inicio": 207.45,
+          "fim": 207.51,
+          "texto": "a"
+        },
+        {
+          "inicio": 207.51,
+          "fim": 207.65,
+          "texto": "gente"
+        },
+        {
+          "inicio": 207.65,
+          "fim": 207.99,
+          "texto": "poder"
+        },
+        {
+          "inicio": 207.99,
+          "fim": 208.35,
+          "texto": "cobrar"
+        },
+        {
+          "inicio": 208.35,
+          "fim": 208.53,
+          "texto": "do"
+        },
+        {
+          "inicio": 208.53,
+          "fim": 208.87,
+          "texto": "novo"
+        },
+        {
+          "inicio": 208.87,
+          "fim": 209.55,
+          "texto": "Senado"
+        },
+        {
+          "inicio": 209.55,
+          "fim": 209.75,
+          "texto": "o"
+        },
+        {
+          "inicio": 209.75,
+          "fim": 209.87,
+          "texto": "que"
+        },
+        {
+          "inicio": 209.87,
+          "fim": 210.11,
+          "texto": "esse"
+        },
+        {
+          "inicio": 210.11,
+          "fim": 210.49,
+          "texto": "Senado"
+        },
+        {
+          "inicio": 210.49,
+          "fim": 210.65,
+          "texto": "não"
+        },
+        {
+          "inicio": 210.65,
+          "fim": 210.89,
+          "texto": "fez."
+        }
+      ]
+    },
+    {
+      "inicio": 211.33,
+      "fim": 215.65,
+      "texto": "O Senador é o único parlamentar de todos os níveis que fiscaliza, por exemplo,",
+      "palavras": [
+        {
+          "inicio": 211.33,
+          "fim": 211.47,
+          "texto": "O"
+        },
+        {
+          "inicio": 211.47,
+          "fim": 211.97,
+          "texto": "Senador"
+        },
+        {
+          "inicio": 211.97,
+          "fim": 212.19,
+          "texto": "é"
+        },
+        {
+          "inicio": 212.19,
+          "fim": 212.37,
+          "texto": "o"
+        },
+        {
+          "inicio": 212.37,
+          "fim": 212.67,
+          "texto": "único"
+        },
+        {
+          "inicio": 212.67,
+          "fim": 213.51,
+          "texto": "parlamentar"
+        },
+        {
+          "inicio": 213.51,
+          "fim": 213.71,
+          "texto": "de"
+        },
+        {
+          "inicio": 213.71,
+          "fim": 213.91,
+          "texto": "todos"
+        },
+        {
+          "inicio": 213.91,
+          "fim": 214.13,
+          "texto": "os"
+        },
+        {
+          "inicio": 214.13,
+          "fim": 214.37,
+          "texto": "níveis"
+        },
+        {
+          "inicio": 214.37,
+          "fim": 214.57,
+          "texto": "que"
+        },
+        {
+          "inicio": 214.57,
+          "fim": 215.19,
+          "texto": "fiscaliza,"
+        },
+        {
+          "inicio": 215.25,
+          "fim": 215.35,
+          "texto": "por"
+        },
+        {
+          "inicio": 215.35,
+          "fim": 215.65,
+          "texto": "exemplo,"
+        }
+      ]
+    },
+    {
+      "inicio": 215.65,
+      "fim": 219.37,
+      "texto": "para o presidente da República, ministro do STF, ministro de Estado.",
+      "palavras": [
+        {
+          "inicio": 215.65,
+          "fim": 215.81,
+          "texto": "para"
+        },
+        {
+          "inicio": 215.81,
+          "fim": 215.81,
+          "texto": "o"
+        },
+        {
+          "inicio": 215.81,
+          "fim": 216.13,
+          "texto": "presidente"
+        },
+        {
+          "inicio": 216.13,
+          "fim": 216.39,
+          "texto": "da"
+        },
+        {
+          "inicio": 216.39,
+          "fim": 216.85,
+          "texto": "República,"
+        },
+        {
+          "inicio": 217.05,
+          "fim": 217.41,
+          "texto": "ministro"
+        },
+        {
+          "inicio": 217.41,
+          "fim": 217.55,
+          "texto": "do"
+        },
+        {
+          "inicio": 217.55,
+          "fim": 218.09,
+          "texto": "STF,"
+        },
+        {
+          "inicio": 218.25,
+          "fim": 218.81,
+          "texto": "ministro"
+        },
+        {
+          "inicio": 218.81,
+          "fim": 219.05,
+          "texto": "de"
+        },
+        {
+          "inicio": 219.05,
+          "fim": 219.37,
+          "texto": "Estado."
+        }
+      ]
+    },
+    {
+      "inicio": 219.99,
+      "fim": 224.69,
+      "texto": "Os senadores são os únicos que sabatinam aqueles nomes indicados para presidir as agências",
+      "palavras": [
+        {
+          "inicio": 219.99,
+          "fim": 220.17,
+          "texto": "Os"
+        },
+        {
+          "inicio": 220.17,
+          "fim": 220.59,
+          "texto": "senadores"
+        },
+        {
+          "inicio": 220.59,
+          "fim": 220.85,
+          "texto": "são"
+        },
+        {
+          "inicio": 220.85,
+          "fim": 220.99,
+          "texto": "os"
+        },
+        {
+          "inicio": 220.99,
+          "fim": 221.31,
+          "texto": "únicos"
+        },
+        {
+          "inicio": 221.31,
+          "fim": 221.45,
+          "texto": "que"
+        },
+        {
+          "inicio": 221.45,
+          "fim": 222.27,
+          "texto": "sabatinam"
+        },
+        {
+          "inicio": 222.27,
+          "fim": 222.49,
+          "texto": "aqueles"
+        },
+        {
+          "inicio": 222.49,
+          "fim": 222.97,
+          "texto": "nomes"
+        },
+        {
+          "inicio": 222.97,
+          "fim": 223.47,
+          "texto": "indicados"
+        },
+        {
+          "inicio": 223.47,
+          "fim": 223.67,
+          "texto": "para"
+        },
+        {
+          "inicio": 223.67,
+          "fim": 224.09,
+          "texto": "presidir"
+        },
+        {
+          "inicio": 224.09,
+          "fim": 224.31,
+          "texto": "as"
+        },
+        {
+          "inicio": 224.31,
+          "fim": 224.69,
+          "texto": "agências"
+        }
+      ]
+    },
+    {
+      "inicio": 224.69,
+      "fim": 230.05,
+      "texto": "reguladoras, as empresas estatais e sabatinam os indicados pelo presidente da República",
+      "palavras": [
+        {
+          "inicio": 224.69,
+          "fim": 225.63,
+          "texto": "reguladoras,"
+        },
+        {
+          "inicio": 226.03,
+          "fim": 226.05,
+          "texto": "as"
+        },
+        {
+          "inicio": 226.05,
+          "fim": 226.39,
+          "texto": "empresas"
+        },
+        {
+          "inicio": 226.39,
+          "fim": 227.19,
+          "texto": "estatais"
+        },
+        {
+          "inicio": 227.19,
+          "fim": 227.63,
+          "texto": "e"
+        },
+        {
+          "inicio": 227.63,
+          "fim": 228.39,
+          "texto": "sabatinam"
+        },
+        {
+          "inicio": 228.39,
+          "fim": 228.55,
+          "texto": "os"
+        },
+        {
+          "inicio": 228.55,
+          "fim": 229.07,
+          "texto": "indicados"
+        },
+        {
+          "inicio": 229.07,
+          "fim": 229.29,
+          "texto": "pelo"
+        },
+        {
+          "inicio": 229.29,
+          "fim": 229.55,
+          "texto": "presidente"
+        },
+        {
+          "inicio": 229.55,
+          "fim": 229.71,
+          "texto": "da"
+        },
+        {
+          "inicio": 229.71,
+          "fim": 230.05,
+          "texto": "República"
+        }
+      ]
+    },
+    {
+      "inicio": 230.05,
+      "fim": 234.55,
+      "texto": "para serem ministros do STF, procurador-geral da República, então a incumbência do Senado",
+      "palavras": [
+        {
+          "inicio": 230.05,
+          "fim": 230.29,
+          "texto": "para"
+        },
+        {
+          "inicio": 230.29,
+          "fim": 230.63,
+          "texto": "serem"
+        },
+        {
+          "inicio": 230.63,
+          "fim": 231.05,
+          "texto": "ministros"
+        },
+        {
+          "inicio": 231.05,
+          "fim": 231.21,
+          "texto": "do"
+        },
+        {
+          "inicio": 231.21,
+          "fim": 231.83,
+          "texto": "STF,"
+        },
+        {
+          "inicio": 232.19,
+          "fim": 232.47,
+          "texto": "procurador"
+        },
+        {
+          "inicio": 232.47,
+          "fim": 232.79,
+          "texto": "-geral"
+        },
+        {
+          "inicio": 232.79,
+          "fim": 232.89,
+          "texto": "da"
+        },
+        {
+          "inicio": 232.89,
+          "fim": 233.23,
+          "texto": "República,"
+        },
+        {
+          "inicio": 233.39,
+          "fim": 233.49,
+          "texto": "então"
+        },
+        {
+          "inicio": 233.49,
+          "fim": 233.61,
+          "texto": "a"
+        },
+        {
+          "inicio": 233.61,
+          "fim": 234.03,
+          "texto": "incumbência"
+        },
+        {
+          "inicio": 234.03,
+          "fim": 234.21,
+          "texto": "do"
+        },
+        {
+          "inicio": 234.21,
+          "fim": 234.55,
+          "texto": "Senado"
+        }
+      ]
+    },
+    {
+      "inicio": 234.55,
+      "fim": 235.33,
+      "texto": "é muito grande.",
+      "palavras": [
+        {
+          "inicio": 234.55,
+          "fim": 234.67,
+          "texto": "é"
+        },
+        {
+          "inicio": 234.67,
+          "fim": 234.95,
+          "texto": "muito"
+        },
+        {
+          "inicio": 234.95,
+          "fim": 235.33,
+          "texto": "grande."
+        }
+      ]
+    },
+    {
+      "inicio": 236.01,
+      "fim": 238.75,
+      "texto": "E é por isso que eu acho que a gente precisa mudar o Senado para ter um Brasil diferente.",
+      "palavras": [
+        {
+          "inicio": 236.01,
+          "fim": 236.07,
+          "texto": "E"
+        },
+        {
+          "inicio": 236.07,
+          "fim": 236.17,
+          "texto": "é"
+        },
+        {
+          "inicio": 236.17,
+          "fim": 236.29,
+          "texto": "por"
+        },
+        {
+          "inicio": 236.29,
+          "fim": 236.47,
+          "texto": "isso"
+        },
+        {
+          "inicio": 236.47,
+          "fim": 236.57,
+          "texto": "que"
+        },
+        {
+          "inicio": 236.57,
+          "fim": 236.61,
+          "texto": "eu"
+        },
+        {
+          "inicio": 236.61,
+          "fim": 236.77,
+          "texto": "acho"
+        },
+        {
+          "inicio": 236.77,
+          "fim": 236.87,
+          "texto": "que"
+        },
+        {
+          "inicio": 236.87,
+          "fim": 236.89,
+          "texto": "a"
+        },
+        {
+          "inicio": 236.89,
+          "fim": 236.95,
+          "texto": "gente"
+        },
+        {
+          "inicio": 236.95,
+          "fim": 237.07,
+          "texto": "precisa"
+        },
+        {
+          "inicio": 237.07,
+          "fim": 237.31,
+          "texto": "mudar"
+        },
+        {
+          "inicio": 237.31,
+          "fim": 237.45,
+          "texto": "o"
+        },
+        {
+          "inicio": 237.45,
+          "fim": 237.81,
+          "texto": "Senado"
+        },
+        {
+          "inicio": 237.81,
+          "fim": 237.95,
+          "texto": "para"
+        },
+        {
+          "inicio": 237.95,
+          "fim": 238.09,
+          "texto": "ter"
+        },
+        {
+          "inicio": 238.09,
+          "fim": 238.17,
+          "texto": "um"
+        },
+        {
+          "inicio": 238.17,
+          "fim": 238.39,
+          "texto": "Brasil"
+        },
+        {
+          "inicio": 238.39,
+          "fim": 238.75,
+          "texto": "diferente."
+        }
+      ]
+    },
+    {
+      "inicio": 239.17,
+      "fim": 241.37,
+      "texto": "Deixou, se autorizou da imagem? Claro, pagou.",
+      "palavras": [
+        {
+          "inicio": 239.17,
+          "fim": 239.57,
+          "texto": "Deixou,"
+        },
+        {
+          "inicio": 239.71,
+          "fim": 239.73,
+          "texto": "se"
+        },
+        {
+          "inicio": 239.73,
+          "fim": 240.19,
+          "texto": "autorizou"
+        },
+        {
+          "inicio": 240.19,
+          "fim": 240.29,
+          "texto": "da"
+        },
+        {
+          "inicio": 240.29,
+          "fim": 240.55,
+          "texto": "imagem?"
+        },
+        {
+          "inicio": 240.73,
+          "fim": 240.93,
+          "texto": "Claro,"
+        },
+        {
+          "inicio": 241.05,
+          "fim": 241.37,
+          "texto": "pagou."
+        }
+      ]
+    }
+  ],
+  "pausas_candidatas": [
+    {
+      "inicio": 1.21,
+      "fim": 4.15,
+      "duracao": 2.94,
+      "tipo": "CANDIDATA_A_REVISAO"
+    },
+    {
+      "inicio": 6.23,
+      "fim": 9.71,
+      "duracao": 3.48,
+      "tipo": "CANDIDATA_A_REVISAO"
+    },
+    {
+      "inicio": 11.09,
+      "fim": 11.85,
+      "duracao": 0.76,
+      "tipo": "CANDIDATA_A_REVISAO"
+    },
+    {
+      "inicio": 46.87,
+      "fim": 47.99,
+      "duracao": 1.12,
+      "tipo": "CANDIDATA_A_REVISAO"
+    },
+    {
+      "inicio": 93.87,
+      "fim": 94.83,
+      "duracao": 0.96,
+      "tipo": "CANDIDATA_A_REVISAO"
+    },
+    {
+      "inicio": 235.33,
+      "fim": 236.01,
+      "duracao": 0.68,
+      "tipo": "CANDIDATA_A_REVISAO"
+    }
+  ]
+}

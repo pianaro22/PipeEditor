@@ -1,0 +1,361 @@
+{
+  "versao": "0.4-test",
+  "arquivo": "C:\\Users\\guilh\\Downloads\\Audio.mp3",
+  "duracao_s": 241.968,
+  "pausa_min_s": 0.2,
+  "observacoes": [
+    "Pausas detectadas pelo Silero VAD a partir do audio, nao dos segmentos Whisper.",
+    "Energia RMS e indicador auxiliar, nao classificacao definitiva de ruido/fala.",
+    "Nenhum intervalo e aprovado automaticamente para corte.",
+    "Tempos relativos ao arquivo de audio; confira offset em relacao a timeline."
+  ],
+  "regioes_voz": [
+    {
+      "inicio": 0.24,
+      "fim": 0.56
+    },
+    {
+      "inicio": 0.816,
+      "fim": 1.808
+    },
+    {
+      "inicio": 2.064,
+      "fim": 4.048
+    },
+    {
+      "inicio": 4.304,
+      "fim": 6.384
+    },
+    {
+      "inicio": 6.896,
+      "fim": 9.968
+    },
+    {
+      "inicio": 10.512,
+      "fim": 11.632
+    },
+    {
+      "inicio": 11.92,
+      "fim": 15.28
+    },
+    {
+      "inicio": 15.312,
+      "fim": 36.016
+    },
+    {
+      "inicio": 36.112,
+      "fim": 47.28
+    },
+    {
+      "inicio": 48.048,
+      "fim": 58.864
+    },
+    {
+      "inicio": 59.056,
+      "fim": 80.688
+    },
+    {
+      "inicio": 80.784,
+      "fim": 84.272
+    },
+    {
+      "inicio": 84.336,
+      "fim": 85.968
+    },
+    {
+      "inicio": 86.192,
+      "fim": 89.552
+    },
+    {
+      "inicio": 89.584,
+      "fim": 94.384
+    },
+    {
+      "inicio": 95.152,
+      "fim": 110.864
+    },
+    {
+      "inicio": 111.088,
+      "fim": 120.144
+    },
+    {
+      "inicio": 120.336,
+      "fim": 122.832
+    },
+    {
+      "inicio": 123.088,
+      "fim": 127.376
+    },
+    {
+      "inicio": 127.472,
+      "fim": 128.272
+    },
+    {
+      "inicio": 128.368,
+      "fim": 130.192
+    },
+    {
+      "inicio": 130.384,
+      "fim": 139.792
+    },
+    {
+      "inicio": 139.824,
+      "fim": 141.36
+    },
+    {
+      "inicio": 141.552,
+      "fim": 147.312
+    },
+    {
+      "inicio": 147.664,
+      "fim": 148.048
+    },
+    {
+      "inicio": 148.24,
+      "fim": 150.832
+    },
+    {
+      "inicio": 150.864,
+      "fim": 151.568
+    },
+    {
+      "inicio": 151.92,
+      "fim": 159.248
+    },
+    {
+      "inicio": 159.44,
+      "fim": 160.784
+    },
+    {
+      "inicio": 160.976,
+      "fim": 162.992
+    },
+    {
+      "inicio": 163.088,
+      "fim": 166.864
+    },
+    {
+      "inicio": 166.896,
+      "fim": 168.656
+    },
+    {
+      "inicio": 169.072,
+      "fim": 170.704
+    },
+    {
+      "inicio": 171.248,
+      "fim": 173.424
+    },
+    {
+      "inicio": 173.52,
+      "fim": 174.48
+    },
+    {
+      "inicio": 174.704,
+      "fim": 178.896
+    },
+    {
+      "inicio": 179.024,
+      "fim": 184.368
+    },
+    {
+      "inicio": 184.432,
+      "fim": 185.456
+    },
+    {
+      "inicio": 185.712,
+      "fim": 190.0
+    },
+    {
+      "inicio": 190.064,
+      "fim": 200.88
+    },
+    {
+      "inicio": 200.976,
+      "fim": 219.6
+    },
+    {
+      "inicio": 220.016,
+      "fim": 235.632
+    },
+    {
+      "inicio": 235.984,
+      "fim": 239.216
+    },
+    {
+      "inicio": 239.312,
+      "fim": 241.616
+    }
+  ],
+  "pausas_candidatas": [
+    {
+      "inicio": 0.0,
+      "fim": 0.24,
+      "duracao": 0.24,
+      "energia_p90_dbfs": -33.2,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 0.56,
+      "fim": 0.816,
+      "duracao": 0.256,
+      "energia_p90_dbfs": -31.9,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 1.808,
+      "fim": 2.064,
+      "duracao": 0.256,
+      "energia_p90_dbfs": -27.8,
+      "tipo": "REVISAO_RUIDO",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 4.048,
+      "fim": 4.304,
+      "duracao": 0.256,
+      "energia_p90_dbfs": -32.6,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 6.384,
+      "fim": 6.896,
+      "duracao": 0.512,
+      "energia_p90_dbfs": -32.1,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 9.968,
+      "fim": 10.512,
+      "duracao": 0.544,
+      "energia_p90_dbfs": -37.7,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 11.632,
+      "fim": 11.92,
+      "duracao": 0.288,
+      "energia_p90_dbfs": -37.3,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 47.28,
+      "fim": 48.048,
+      "duracao": 0.768,
+      "energia_p90_dbfs": -29.8,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 85.968,
+      "fim": 86.192,
+      "duracao": 0.224,
+      "energia_p90_dbfs": -34.7,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 94.384,
+      "fim": 95.152,
+      "duracao": 0.768,
+      "energia_p90_dbfs": -35.3,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 110.864,
+      "fim": 111.088,
+      "duracao": 0.224,
+      "energia_p90_dbfs": -36.1,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 122.832,
+      "fim": 123.088,
+      "duracao": 0.256,
+      "energia_p90_dbfs": -36.0,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 147.312,
+      "fim": 147.664,
+      "duracao": 0.352,
+      "energia_p90_dbfs": -34.3,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 151.568,
+      "fim": 151.92,
+      "duracao": 0.352,
+      "energia_p90_dbfs": -34.9,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 168.656,
+      "fim": 169.072,
+      "duracao": 0.416,
+      "energia_p90_dbfs": -31.5,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 170.704,
+      "fim": 171.248,
+      "duracao": 0.544,
+      "energia_p90_dbfs": -35.8,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 174.48,
+      "fim": 174.704,
+      "duracao": 0.224,
+      "energia_p90_dbfs": -34.9,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 185.456,
+      "fim": 185.712,
+      "duracao": 0.256,
+      "energia_p90_dbfs": -37.2,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 219.6,
+      "fim": 220.016,
+      "duracao": 0.416,
+      "energia_p90_dbfs": -34.9,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 235.632,
+      "fim": 235.984,
+      "duracao": 0.352,
+      "energia_p90_dbfs": -34.4,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    },
+    {
+      "inicio": 241.616,
+      "fim": 241.968,
+      "duracao": 0.352,
+      "energia_p90_dbfs": -30.6,
+      "tipo": "CANDIDATA_PAUSA",
+      "aprovada_para_corte": false
+    }
+  ],
+  "pausas_versao_03": []
+}

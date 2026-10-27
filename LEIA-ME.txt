@@ -1,0 +1,13 @@
+PIPE EDITOR AI 0.2 - WINDOWS 11 / PREMIERE PRO 2026
+
+1. Extraia esta pasta para C:\PipeEditorAI\PipeEditorAI_0_2.
+2. No UXP Developer Tool, descarregue o plugin 0.1 (Unload).
+3. Remova a entrada antiga da lista do UXP Developer Tool (sem apagar seus arquivos).
+4. Add Plugin > selecione o manifest.json desta pasta > Load & Watch.
+5. No Premiere, abra uma sequência com Camera1 em V1, Camera2 em V2 e áudio em A1.
+6. No painel Pipe Editor AI, clique em "Ler sequência ativa".
+7. Envie uma captura do resultado ou do erro exibido.
+
+O ID do plugin foi mantido para atualizar o mesmo painel.
+Esta versão é SOMENTE LEITURA. Não faz cortes, exportações ou IA.
+Se a versão antiga continuar aparecendo, feche e reabra o painel e recarregue no UXP Developer Tool.
