@@ -9,7 +9,7 @@
 <body>
 <main>
 
-  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.7</div>
+  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.8</div>
 
   <h1>PIPE <span>EDITOR AI</span></h1>
 
@@ -176,6 +176,33 @@
     </div>
     <div id="previewCutPlanDetails"></div>
     <small>Somente leitura. A timeline não será modificada.</small>
+  </section>
+
+
+  <section>
+    <h2>09 · Smart Cut 0.8 — Edição real</h2>
+    <p>
+      Prepare a nova sequência com os 23 cortes.
+      O Premiere 2026 pode exportar uma cópia da estrutura
+      de V1, V2 e áudio em Final Cut Pro 7 XML.
+    </p>
+    <button id="exportSequenceXmlButton" class="secondary">
+      Exportar XML da sequência
+    </button>
+    <div id="exportXmlStatus" role="status">
+      Abra a sequência original para exportar sua estrutura.
+    </div>
+    <button id="checkNativeRazorButton" class="secondary">
+      Verificar compatibilidade Razor
+    </button>
+    <div id="nativeRazorStatus" role="status">
+      Aguardando verificação.
+    </div>
+    <small>
+      Nenhum corte é realizado nesta seção.
+      O XML exportado é um novo arquivo, não modifica a
+      sequência existente.
+    </small>
   </section>
 
 </main>
