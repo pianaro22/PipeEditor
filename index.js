@@ -547,6 +547,8 @@ importButton.addEventListener("click", async () => {
   } finally {
     importButton.disabled = false;
   }
+});
+
   // ==========================================
 // PIPE EDITOR AI 0.4
 // DIAGNÓSTICO DE 3 CORTES
@@ -789,6 +791,9 @@ testCutsButton.addEventListener(
     } finally {
       testCutsButton.disabled = false;
     }
+  }
+);
+
     // ==========================================
 // PIPE EDITOR AI 0.5
 // DUPLICAÇÃO SEGURA DA SEQUÊNCIA
@@ -1124,7 +1129,11 @@ cloneSequenceButton.addEventListener(
     } finally {
       cloneSequenceButton.disabled = false;
     }
-    const checkEditingApiButton =
+  }
+);
+
+// PIPE EDITOR AI 0.6 - DIAGNÓSTICO DA API
+const checkEditingApiButton =
   document.getElementById("checkEditingApiButton");
 
 const editingApiStatus =
@@ -1261,9 +1270,3 @@ checkEditingApiButton.addEventListener(
     }
   }
 );
-  }
-);
-  }
-  
-);
-});
