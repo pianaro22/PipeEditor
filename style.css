@@ -331,3 +331,19 @@ small {
   border-radius: 7px;
   white-space: pre-wrap;
 }
+
+
+/* PIPE EDITOR AI 0.8 - XML E COMPATIBILIDADE */
+#exportXmlStatus,
+#nativeRazorStatus {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 11px;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+#checkNativeRazorButton {
+  margin-top: 10px;
+}

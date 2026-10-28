@@ -1501,3 +1501,165 @@ previewCutPlanButton.addEventListener("click", async () => {
     previewCutPlanButton.disabled = false;
   }
 });
+
+
+// ==========================================
+// PIPE EDITOR AI 0.8
+// EXPORTAÇÃO DA SEQUÊNCIA PARA FCP7 XML
+// Nenhuma alteração nos itens da timeline.
+// ==========================================
+
+const exportSequenceXmlButton =
+  document.getElementById("exportSequenceXmlButton");
+
+const exportXmlStatus =
+  document.getElementById("exportXmlStatus");
+
+exportSequenceXmlButton.addEventListener("click", async () => {
+  exportSequenceXmlButton.disabled = true;
+  exportXmlStatus.className = "";
+  exportXmlStatus.textContent =
+    "Preparando exportação da sequência...";
+
+  try {
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto ativo.");
+
+    const sequence = await project.getActiveSequence();
+    if (!sequence) throw new Error("Nenhuma sequência ativa.");
+
+    if (
+      !app.ProjectConverter ||
+      typeof app.ProjectConverter.exportAsFinalCutProXML !== "function"
+    ) {
+      throw new Error(
+        "Esta instalação não oferece ProjectConverter." +
+        "exportAsFinalCutProXML (requer Premiere 26.2+). " +
+        "Use Arquivo > Exportar > Final Cut Pro XML."
+      );
+    }
+
+    // O nome da sequência não é usado no caminho nativo;
+    // o usuário seleciona explicitamente onde salvar.
+    const file = await fs.getFileForSaving(
+      "PipeEditorAI_Sequencia_Original.xml",
+      { types: ["xml"] }
+    );
+
+    if (!file) {
+      exportXmlStatus.textContent = "Exportação cancelada.";
+      return;
+    }
+
+    const nativePath = fs.getNativePath(file);
+    if (!nativePath || typeof nativePath !== "string") {
+      throw new Error("Não foi possível obter o caminho do XML.");
+    }
+
+    exportXmlStatus.textContent =
+      "Exportando XML para o arquivo selecionado...";
+
+    const exported =
+      await app.ProjectConverter.exportAsFinalCutProXML(
+        sequence,
+        nativePath,
+        true // suppressUI; o destino já foi escolhido.
+      );
+
+    if (exported !== true) {
+      throw new Error(
+        "O Premiere não confirmou a exportação. " +
+        "Verifique se o arquivo foi criado corretamente."
+      );
+    }
+
+    exportXmlStatus.className = "success";
+    exportXmlStatus.textContent =
+      "XML exportado com sucesso.\n" +
+      "Sequência: " + safe(sequence.name) + "\n" +
+      "Arquivo: " + nativePath + "\n" +
+      "O projeto e a timeline não foram modificados.\n\n" +
+      "Envie este arquivo XML nesta conversa para " +
+      "prepararmos os cortes das duas câmeras e do áudio.";
+
+  } catch (err) {
+    exportXmlStatus.className = "error";
+    exportXmlStatus.textContent =
+      "Erro ao exportar XML: " +
+      (err?.message || String(err));
+    console.error(err);
+  } finally {
+    exportSequenceXmlButton.disabled = false;
+  }
+});
+
+// O Razor de novas versões da API não deve ser confundido
+// com createSetStartAction/createSetEndAction: esses métodos
+// não garantem a divisão em dois trackItems.
+const checkNativeRazorButton =
+  document.getElementById("checkNativeRazorButton");
+
+const nativeRazorStatus =
+  document.getElementById("nativeRazorStatus");
+
+checkNativeRazorButton.addEventListener("click", async () => {
+  checkNativeRazorButton.disabled = true;
+  nativeRazorStatus.textContent = "Verificando a API Razor...";
+
+  try {
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto ativo.");
+
+    const sequence = await project.getActiveSequence();
+    if (!sequence) throw new Error("Nenhuma sequência ativa.");
+
+    const editor = app.SequenceEditor.getEditor(sequence);
+    const trackRazor = Boolean(
+      editor &&
+      typeof editor.createRazorTrackAction === "function"
+    );
+    const allRazor = Boolean(
+      editor &&
+      typeof editor.createRazorAllTracksAction === "function"
+    );
+
+    // A propriedade Application.version pode ser assíncrona.
+    let hostVersion = "não informada";
+    try {
+      const v = await app.version;
+      if (v !== undefined && v !== null) {
+        hostVersion = String(v);
+      }
+    } catch {
+      // O resultado de compatibilidade vem diretamente do editor.
+    }
+
+    nativeRazorStatus.className =
+      trackRazor ? "success" : "warning";
+
+    nativeRazorStatus.textContent =
+      "Premiere: " + hostVersion + "\n" +
+      "createRazorTrackAction: " +
+      (trackRazor ? "DISPONÍVEL" : "INDISPONÍVEL") + "\n" +
+      "createRazorAllTracksAction: " +
+      (allRazor ? "DISPONÍVEL" : "INDISPONÍVEL") + "\n\n" +
+      (trackRazor
+        ? "A instalação possui Razor nativo. " +
+          "A execução segura em cópia será implementada " +
+          "após validar o comportamento da sua versão."
+        : "Sem Razor nativo: usaremos o XML da sequência " +
+          "para criar uma nova timeline editada, sem modificar " +
+          "a original.");
+
+  } catch (err) {
+    nativeRazorStatus.className = "error";
+    nativeRazorStatus.textContent =
+      "Erro no diagnóstico: " +
+      (err?.message || String(err));
+    console.error(err);
+  } finally {
+    checkNativeRazorButton.disabled = false;
+  }
+});
