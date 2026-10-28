@@ -1270,3 +1270,234 @@ checkEditingApiButton.addEventListener(
     }
   }
 );
+
+
+// ==========================================
+// PIPE EDITOR AI 0.7
+// PRÉVIA TEMPORAL (SOMENTE LEITURA)
+// ==========================================
+
+// Simula a remoção de intervalos no tempo da sequência.
+// Não altera, reinterpreta nem grava mídias no Premiere.
+// A preservação de efeitos e de in/out de fonte será
+// verificada quando implementarmos a edição real.
+function buildSmartCutTimePlan(sequenceSnapshot, cuts) {
+  const ordered = cuts.slice().sort((a, b) => a.start - b.start);
+  const epsilon = 0.00000001;
+
+  for (let index = 0; index < ordered.length; index++) {
+    const cut = ordered[index];
+
+    if (
+      !Number.isFinite(cut.start) ||
+      !Number.isFinite(cut.end) ||
+      cut.start < 0 ||
+      cut.end <= cut.start ||
+      cut.end > sequenceSnapshot.duration + 0.001
+    ) {
+      throw new Error("Intervalo inválido no corte " + (index + 1));
+    }
+
+    if (index > 0 && cut.start < ordered[index - 1].end - epsilon) {
+      throw new Error("Os intervalos de corte estão sobrepostos.");
+    }
+  }
+
+  const removed = ordered.reduce(
+    (total, cut) => total + cut.end - cut.start,
+    0
+  );
+
+  function removedBefore(time) {
+    let sum = 0;
+
+    for (const cut of ordered) {
+      if (time <= cut.start) break;
+      sum += Math.max(
+        0,
+        Math.min(time, cut.end) - cut.start
+      );
+    }
+
+    return sum;
+  }
+
+  const tracks = sequenceSnapshot.tracks.map(track => {
+    const segments = [];
+
+    for (const clip of track.clips) {
+      let cursor = clip.start;
+
+      function appendVisibleSegment(start, end) {
+        if (end <= start + epsilon) return;
+
+        const newStart = start - removedBefore(start);
+        const newEnd = end - removedBefore(end);
+
+        segments.push({
+          name: clip.name,
+          originalStart: start,
+          originalEnd: end,
+          newStart,
+          newEnd
+        });
+      }
+
+      for (const cut of ordered) {
+        if (cut.end <= cursor + epsilon) continue;
+        if (cut.start >= clip.end - epsilon) break;
+
+        appendVisibleSegment(
+          cursor,
+          Math.min(cut.start, clip.end)
+        );
+
+        cursor = Math.max(cursor, cut.end);
+        if (cursor >= clip.end - epsilon) break;
+      }
+
+      appendVisibleSegment(cursor, clip.end);
+    }
+
+    return {
+      id: track.id,
+      inputClips: track.clips.length,
+      segments
+    };
+  });
+
+  return {
+    removed,
+    projectedDuration: Math.max(
+      0,
+      sequenceSnapshot.duration - removed
+    ),
+    tracks
+  };
+}
+
+const previewCutPlanButton =
+  document.getElementById("previewCutPlanButton");
+
+const previewCutPlanStatus =
+  document.getElementById("previewCutPlanStatus");
+
+const previewCutPlanDetails =
+  document.getElementById("previewCutPlanDetails");
+
+previewCutPlanButton.addEventListener("click", async () => {
+  previewCutPlanButton.disabled = true;
+  previewCutPlanStatus.textContent = "Calculando plano de corte...";
+  previewCutPlanDetails.textContent = "";
+
+  try {
+    if (!importedCuts || !importedCuts.length) {
+      throw new Error("Importe o JSON antes de calcular o plano.");
+    }
+
+    if (activeSequenceDuration === null) {
+      throw new Error("Clique em Ler sequência ativa primeiro.");
+    }
+
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto aberto.");
+
+    const seq = await project.getActiveSequence();
+    if (!seq) throw new Error("Nenhuma sequência ativa.");
+
+    const currentEnd = await seq.getEndTime();
+    if (
+      Math.abs(currentEnd.seconds - activeSequenceDuration) > 0.05
+    ) {
+      throw new Error(
+        "A duração da sequência mudou desde a leitura. " +
+        "Clique novamente em Ler sequência ativa."
+      );
+    }
+
+    const problems = validateCuts(importedCuts);
+    if (problems.length) {
+      throw new Error(
+        "Corrija a validação dos cortes: " +
+        problems.join("; ")
+      );
+    }
+
+    const snapshot = await getSequenceSnapshot(seq, app);
+
+    const allCutsPlan = buildSmartCutTimePlan(
+      snapshot,
+      importedCuts
+    );
+
+    const first = importedCuts[0];
+    const firstCutPlan = buildSmartCutTimePlan(
+      snapshot,
+      [first]
+    );
+
+    previewCutPlanStatus.className = "success";
+    previewCutPlanStatus.textContent =
+      "Plano temporal calculado. Nenhum clipe foi alterado.\n" +
+      "Cortes planejados: " + importedCuts.length + "\n" +
+      "Remoção total: " + fmt(allCutsPlan.removed) + "\n" +
+      "Duração projetada: " + fmt(allCutsPlan.projectedDuration);
+
+    const header = document.createElement("div");
+    header.className = "cut";
+    line(
+      header,
+      "clip",
+      "CORTE 1: " + fmt(first.start) +
+      " → " + fmt(first.end) +
+      " | remoção " + fmt(first.end - first.start)
+    );
+    previewCutPlanDetails.appendChild(header);
+
+    for (const track of firstCutPlan.tracks) {
+      const box = document.createElement("div");
+      box.className = "cut";
+
+      const title = document.createElement("strong");
+      title.textContent = track.id;
+      box.appendChild(title);
+
+      if (!track.segments.length) {
+        line(box, "clip", "Sem clipes remanescentes nesta faixa.");
+      }
+
+      for (const segment of track.segments) {
+        line(
+          box,
+          "clip",
+          segment.name + "\n" +
+          "Origem: " + fmt(segment.originalStart) +
+          " → " + fmt(segment.originalEnd) + "\n" +
+          "Após corte: " + fmt(segment.newStart) +
+          " → " + fmt(segment.newEnd)
+        );
+      }
+
+      previewCutPlanDetails.appendChild(box);
+    }
+
+    const note = document.createElement("div");
+    note.className = "warning";
+    note.textContent =
+      "Prévia matemática: antes de executar cortes reais, " +
+      "precisamos alinhar limites aos frames, preservar " +
+      "in/out de fonte e validar efeitos, velocidade e áudio. " +
+      "Nenhuma edição foi feita.";
+    previewCutPlanDetails.appendChild(note);
+
+  } catch (err) {
+    previewCutPlanStatus.className = "error";
+    previewCutPlanStatus.textContent =
+      "Não foi possível calcular: " +
+      (err?.message || String(err));
+    console.error(err);
+  } finally {
+    previewCutPlanButton.disabled = false;
+  }
+});
