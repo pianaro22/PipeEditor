@@ -1,1 +1,309 @@
-*{box-sizing:border-box}body{margin:0;background:#101319;color:#eaf0fb;font:13px Arial,sans-serif}main{padding:18px}.eyebrow{font-size:10px;letter-spacing:2px;color:#8fa4c6}h1{font-size:27px;margin:8px 0 4px}h1 span{color:#5099ff}h2{font-size:15px;margin:0 0 10px}p{color:#b3bfd0;line-height:1.5}section{background:#1b2230;border:1px solid #303f57;border-radius:11px;margin:13px 0;padding:15px}button{background:#327de7;color:#fff;border:0;border-radius:8px;padding:13px;width:100%;font-weight:bold;cursor:pointer}button:disabled{opacity:.6}#status{margin-top:12px;color:#a7d0ff;white-space:pre-wrap}#summary,#tracks{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7}.track{padding:9px 0;border-top:1px solid #394458}.clip{margin:5px 0 8px 10px;color:#dce7fa}small{color:#96a5ba}
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   PIPE EDITOR AI 0.3
+   SCROLL VERTICAL DO PAINEL
+========================================== */
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  max-height: 100vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 18px 14px 35px 18px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #327de7 #101319;
+}
+
+/* Barra de rolagem */
+
+main::-webkit-scrollbar {
+  width: 7px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #101319;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #327de7;
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: #5099ff;
+}
+
+/* Evitar elementos ultrapassando o painel */
+
+section {
+  width: 100%;
+  min-width: 0;
+}
+
+#summary,
+#tracks,
+#cutsList,
+#status,
+#importStatus {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Lista de cortes com rolagem independente */
+
+#cutsList {
+  max-height: 320px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-right: 5px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #327de7 #141b27;
+}
+
+#cutsList::-webkit-scrollbar {
+  width: 5px;
+}
+
+#cutsList::-webkit-scrollbar-thumb {
+  background: #327de7;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  background: #101319;
+  color: #eaf0fb;
+  font: 13px Arial, sans-serif;
+}
+
+main {
+  padding: 18px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8fa4c6;
+}
+
+h1 {
+  font-size: 27px;
+  margin: 8px 0 4px;
+}
+
+h1 span {
+  color: #5099ff;
+}
+
+h2 {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+p {
+  color: #b3bfd0;
+  line-height: 1.5;
+}
+
+section {
+  background: #1b2230;
+  border: 1px solid #303f57;
+  border-radius: 11px;
+  margin: 13px 0;
+  padding: 15px;
+}
+
+button {
+  background: #327de7;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #263c60;
+  border: 1px solid #4584d7;
+}
+
+button:hover {
+  filter: brightness(1.12);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+#status,
+#importStatus {
+  margin-top: 12px;
+  color: #a7d0ff;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#summary,
+#tracks,
+#cutsList {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+
+.track {
+  padding: 9px 0;
+  border-top: 1px solid #394458;
+}
+
+.clip {
+  margin: 5px 0 8px 10px;
+  color: #dce7fa;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #303f57;
+}
+
+.metric span {
+  color: #b3bfd0;
+}
+
+.metric strong {
+  color: #70adff;
+  font-size: 17px;
+}
+
+.cut {
+  padding: 11px;
+  margin: 8px 0;
+  background: #141b27;
+  border: 1px solid #303f57;
+  border-radius: 7px;
+}
+
+.cut strong {
+  display: block;
+  color: #70adff;
+  margin-bottom: 5px;
+}
+
+.cut small {
+  display: block;
+  margin-top: 4px;
+}
+
+#validationStatus {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.success {
+  color: #8ce5b0;
+  background: #173829;
+}
+
+.warning {
+  color: #f3cf87;
+  background: #3c3019;
+}
+
+.error {
+  color: #ffaaaa;
+  background: #481f25;
+}
+
+small {
+  color: #96a5ba;
+}
+/* PIPE EDITOR AI 0.4 */
+
+#testCutsStatus {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+#testCutsDetails {
+  margin-top: 12px;
+}
+
+#testCutsDetails .cut {
+  margin-bottom: 12px;
+}
+
+#testCutsDetails .clip {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#cloneSequenceStatus {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 7px;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+
+  line-height: 1.6;
+}
+
+#cloneSequenceDetails {
+  margin-top: 12px;
+  padding: 8px 0;
+}
+
+#cloneSequenceDetails .clip {
+  margin: 7px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+#editingApiStatus {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 7px;
+
+  background: #141b27;
+  color: #a7d0ff;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+
+  line-height: 1.8;
+}

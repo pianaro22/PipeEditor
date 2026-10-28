@@ -1,0 +1,25 @@
+PIPE EDITOR AI — CALIBRACAO 1.1
+
+ESTA ENTREGA JA CONTEM A COMPARACAO EXECUTADA.
+Abra resultado/comparacao.csv (Excel) ou resultado/comparacao.json.
+
+BASE:
+- Original: Audio.mp3 (241,968 s)
+- Manual: AudioCortado.mp3 (208,944 s)
+- IA 0.8: resultado_v08_preview.mp3 (230,798 s)
+
+O QUE FOI FEITO:
+1) Alinhamento do original com o audio manual (Calibrador 1.0).
+2) Alinhamento do original com o audio da versao 0.8 (mesmo calibrador).
+3) Cruzamento de intervalos candidatos com sobreposicao temporal.
+
+IMPORTANTE:
+- 'Sem correspondencia' NAO comprova que a IA errou: sao janelas aproximadas.
+- Nao use os tempos do CSV como cortes prontos para Premiere.
+- O numero de candidatos NAO equivale ao numero de cortes reais.
+- Proxima etapa: refinar inicio/fim em alta resolucao e validar protecao de palavras.
+
+REPRODUZIR COM OUTROS RELATORIOS:
+python comparar_cortes.py caminho_manual/relatorio.json caminho_ia/relatorio.json --saida nova_comparacao
+
+Nao altera arquivos de audio nem projetos Premiere.

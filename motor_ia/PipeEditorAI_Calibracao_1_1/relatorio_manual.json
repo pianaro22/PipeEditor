@@ -1,0 +1,561 @@
+{
+  "original": "/mnt/data/Audio(1).mp3",
+  "manual": "/mnt/data/AudioCortado.mp3",
+  "duracao_original_s": 241.968,
+  "duracao_manual_s": 208.944,
+  "tempo_total_removido_s": 33.024,
+  "ancoras_validas": 260,
+  "intervalos_candidatos": 61,
+  "cortes_aproximados": [
+    {
+      "intervalo_original_aproximado": [
+        10.6,
+        12.2
+      ],
+      "duracao_removida_estimada_s": 0.7,
+      "confianca_ancoras": 0.944,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        15.4,
+        17.0
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        21.8,
+        22.6
+      ],
+      "duracao_removida_estimada_s": 0.216,
+      "confianca_ancoras": 0.934,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        26.6,
+        27.4
+      ],
+      "duracao_removida_estimada_s": 0.217,
+      "confianca_ancoras": 0.897,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        31.4,
+        32.2
+      ],
+      "duracao_removida_estimada_s": 0.367,
+      "confianca_ancoras": 0.947,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        35.4,
+        36.2
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 0.968,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        37.8,
+        39.4
+      ],
+      "duracao_removida_estimada_s": 0.366,
+      "confianca_ancoras": 0.963,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        39.4,
+        40.2
+      ],
+      "duracao_removida_estimada_s": 0.234,
+      "confianca_ancoras": 0.905,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        46.6,
+        48.2
+      ],
+      "duracao_removida_estimada_s": 1.016,
+      "confianca_ancoras": 0.946,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        56.2,
+        57.0
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 0.726,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        57.8,
+        59.4
+      ],
+      "duracao_removida_estimada_s": 0.3,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        61.8,
+        63.4
+      ],
+      "duracao_removida_estimada_s": 0.233,
+      "confianca_ancoras": 0.981,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        65.0,
+        65.8
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 0.93,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        69.0,
+        70.6
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 0.911,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        73.0,
+        74.6
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 0.916,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        75.4,
+        76.2
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 0.895,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        79.4,
+        80.2
+      ],
+      "duracao_removida_estimada_s": 0.267,
+      "confianca_ancoras": 0.962,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        83.4,
+        84.2
+      ],
+      "duracao_removida_estimada_s": 0.283,
+      "confianca_ancoras": 0.724,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        85.0,
+        86.6
+      ],
+      "duracao_removida_estimada_s": 0.4,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        93.8,
+        95.4
+      ],
+      "duracao_removida_estimada_s": 1.05,
+      "confianca_ancoras": 0.929,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        101.8,
+        103.4
+      ],
+      "duracao_removida_estimada_s": 0.267,
+      "confianca_ancoras": 0.974,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        106.6,
+        107.4
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 0.928,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        108.2,
+        109.0
+      ],
+      "duracao_removida_estimada_s": 0.216,
+      "confianca_ancoras": 0.939,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        109.8,
+        111.4
+      ],
+      "duracao_removida_estimada_s": 0.334,
+      "confianca_ancoras": 0.962,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        111.4,
+        113.0
+      ],
+      "duracao_removida_estimada_s": 0.316,
+      "confianca_ancoras": 0.961,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        116.2,
+        117.0
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 0.924,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        119.4,
+        120.2
+      ],
+      "duracao_removida_estimada_s": 0.384,
+      "confianca_ancoras": 0.919,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        121.8,
+        123.4
+      ],
+      "duracao_removida_estimada_s": 0.4,
+      "confianca_ancoras": 0.947,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        126.6,
+        127.4
+      ],
+      "duracao_removida_estimada_s": 0.383,
+      "confianca_ancoras": 0.977,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        127.4,
+        128.2
+      ],
+      "duracao_removida_estimada_s": 0.217,
+      "confianca_ancoras": 0.744,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        129.8,
+        130.6
+      ],
+      "duracao_removida_estimada_s": 0.333,
+      "confianca_ancoras": 0.714,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        140.2,
+        141.8
+      ],
+      "duracao_removida_estimada_s": 0.333,
+      "confianca_ancoras": 0.976,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        146.6,
+        148.2
+      ],
+      "duracao_removida_estimada_s": 0.833,
+      "confianca_ancoras": 0.922,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        150.6,
+        152.2
+      ],
+      "duracao_removida_estimada_s": 0.45,
+      "confianca_ancoras": 0.713,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        153.8,
+        154.6
+      ],
+      "duracao_removida_estimada_s": 0.234,
+      "confianca_ancoras": 0.944,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        158.6,
+        159.4
+      ],
+      "duracao_removida_estimada_s": 0.383,
+      "confianca_ancoras": 0.968,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        160.2,
+        161.0
+      ],
+      "duracao_removida_estimada_s": 0.267,
+      "confianca_ancoras": 0.916,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        162.6,
+        163.4
+      ],
+      "duracao_removida_estimada_s": 0.216,
+      "confianca_ancoras": 0.725,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        165.8,
+        167.4
+      ],
+      "duracao_removida_estimada_s": 0.267,
+      "confianca_ancoras": 0.952,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        168.2,
+        169.0
+      ],
+      "duracao_removida_estimada_s": 0.3,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        169.8,
+        171.4
+      ],
+      "duracao_removida_estimada_s": 0.567,
+      "confianca_ancoras": 0.973,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        172.2,
+        173.8
+      ],
+      "duracao_removida_estimada_s": 0.216,
+      "confianca_ancoras": 0.941,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        173.8,
+        174.6
+      ],
+      "duracao_removida_estimada_s": 0.367,
+      "confianca_ancoras": 0.941,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        177.8,
+        179.4
+      ],
+      "duracao_removida_estimada_s": 0.317,
+      "confianca_ancoras": 0.868,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        183.4,
+        185.0
+      ],
+      "duracao_removida_estimada_s": 0.316,
+      "confianca_ancoras": 0.977,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        185.0,
+        185.8
+      ],
+      "duracao_removida_estimada_s": 0.317,
+      "confianca_ancoras": 0.977,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        189.0,
+        189.8
+      ],
+      "duracao_removida_estimada_s": 0.35,
+      "confianca_ancoras": 0.721,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        192.2,
+        193.8
+      ],
+      "duracao_removida_estimada_s": 0.283,
+      "confianca_ancoras": 0.886,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        195.4,
+        197.0
+      ],
+      "duracao_removida_estimada_s": 0.217,
+      "confianca_ancoras": 0.967,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        197.0,
+        197.8
+      ],
+      "duracao_removida_estimada_s": 0.217,
+      "confianca_ancoras": 0.958,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        200.2,
+        201.0
+      ],
+      "duracao_removida_estimada_s": 0.283,
+      "confianca_ancoras": 0.905,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        205.0,
+        206.6
+      ],
+      "duracao_removida_estimada_s": 0.3,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        206.6,
+        207.4
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 0.996,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        210.6,
+        211.4
+      ],
+      "duracao_removida_estimada_s": 0.283,
+      "confianca_ancoras": 0.94,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        217.8,
+        219.4
+      ],
+      "duracao_removida_estimada_s": 0.267,
+      "confianca_ancoras": 0.686,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        219.4,
+        220.2
+      ],
+      "duracao_removida_estimada_s": 0.383,
+      "confianca_ancoras": 0.686,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        225.0,
+        225.8
+      ],
+      "duracao_removida_estimada_s": 0.234,
+      "confianca_ancoras": 0.916,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        226.6,
+        227.4
+      ],
+      "duracao_removida_estimada_s": 0.233,
+      "confianca_ancoras": 0.828,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        231.4,
+        232.2
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        234.6,
+        236.2
+      ],
+      "duracao_removida_estimada_s": 0.483,
+      "confianca_ancoras": 0.981,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        238.6,
+        239.4
+      ],
+      "duracao_removida_estimada_s": 0.234,
+      "confianca_ancoras": 0.946,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    }
+  ],
+  "aviso": "Os intervalos são estimativas por alinhamento de áudio comprimido, não um EDL pronto para aplicar."
+}

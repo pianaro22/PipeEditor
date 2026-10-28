@@ -1,1 +1,165 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"></head><body><main><div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.2</div><h1>PIPE <span>EDITOR AI</span></h1><p>Leitura real da timeline · somente consulta</p><section><h2>01 · Smart Cut</h2><p>V1: entrevistador · V2: entrevistado · A1: áudio principal</p><button id="readButton">Ler sequência ativa</button><div id="status" role="status">Abra uma sequência e clique no botão.</div></section><section><h2>Resumo da sequência</h2><div id="summary">Aguardando leitura.</div></section><section><h2>Clipes encontrados</h2><div id="tracks">Aguardando leitura.</div></section><section><h2>Configurações futuras</h2><p>Atraso de troca: 0,3 s · Pausas: leve · Interrupções curtas: manter câmera</p><small>Estas configurações ainda não executam cortes.</small></section></main><script src="index.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+
+  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.3</div>
+
+  <h1>PIPE <span>EDITOR AI</span></h1>
+
+  <p>Smart Cut · Análise inteligente de áudio</p>
+
+  <section>
+    <h2>01 · Sequência ativa</h2>
+
+    <p>
+      V1: entrevistador<br>
+      V2: entrevistado<br>
+      A1: áudio principal
+    </p>
+
+    <button id="readButton">
+      Ler sequência ativa
+    </button>
+
+    <div id="status" role="status">
+      Abra uma sequência e clique no botão.
+    </div>
+  </section>
+
+  <section>
+    <h2>02 · Smart Cut</h2>
+
+    <p>
+      Importe o relatório JSON gerado pelo motor de IA.
+    </p>
+
+    <button id="importButton" class="secondary">
+      Importar Smart Cut
+    </button>
+
+    <div id="importStatus" role="status">
+      Nenhum relatório importado.
+    </div>
+  </section>
+
+  <section>
+    <h2>03 · Resultado da análise</h2>
+
+    <div class="metric">
+      <span>Cortes identificados</span>
+      <strong id="cutCount">—</strong>
+    </div>
+
+    <div class="metric">
+      <span>Tempo removido</span>
+      <strong id="removedTime">—</strong>
+    </div>
+
+    <div class="metric">
+      <span>Duração estimada</span>
+      <strong id="finalDuration">—</strong>
+    </div>
+
+    <div id="validationStatus"></div>
+  </section>
+
+  <section>
+    <h2>04 · Intervalos de corte</h2>
+
+    <div id="cutsList">
+      Aguardando importação.
+    </div>
+  </section>
+
+  <section>
+    <h2>Resumo da sequência</h2>
+
+    <div id="summary">
+      Aguardando leitura.
+    </div>
+  </section>
+
+  <section>
+    <h2>Clipes encontrados</h2>
+
+    <div id="tracks">
+      Aguardando leitura.
+    </div>
+  </section>
+
+  <section>
+  <h2>05 · Smart Cut 0.4</h2>
+
+  <p>
+    Diagnóstico dos três primeiros cortes
+    nas faixas V1, V2 e A1.
+  </p>
+
+  <button id="testCutsButton" class="secondary">
+    Preparar 3 cortes de teste
+  </button>
+
+  <div id="testCutsStatus" role="status">
+    Importe o JSON e leia a sequência antes de iniciar.
+  </div>
+
+  <div id="testCutsDetails"></div>
+
+  <h2>06 · Duplicar Sequência</h2>
+  <small>
+    Modo seguro: nenhuma alteração será realizada na timeline.
+  </small>
+
+   <p>
+    Crie uma cópia de segurança da sequência
+    antes de aplicar os cortes automáticos.
+  </p>
+
+  <button id="cloneSequenceButton" class="secondary">
+    Duplicar sequência para Smart Cut
+  </button>
+
+  <div id="cloneSequenceStatus" role="status">
+    Aguardando duplicação.
+  </div>
+
+  <div id="cloneSequenceDetails"></div>
+
+  <small>
+    A sequência original será preservada.
+    Nenhum corte será aplicado nesta versão.
+  </small>
+  <section>
+  <h2>07 · Smart Cut 0.6</h2>
+
+  <p>
+    Diagnóstico dos recursos de edição
+    disponíveis no Premiere Pro.
+  </p>
+
+  <button id="checkEditingApiButton" class="secondary">
+    Verificar API de edição
+  </button>
+
+  <div id="editingApiStatus" role="status">
+    Aguardando verificação.
+  </div>
+
+  <small>
+    Este teste não modifica a sequência.
+  </small>
+</section>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>

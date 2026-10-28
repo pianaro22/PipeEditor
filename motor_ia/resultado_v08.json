@@ -1,0 +1,465 @@
+{
+  "versao": "0.8-protecao-palavras",
+  "audio": "C:\\Users\\guilh\\Downloads\\Audio.mp3",
+  "perfil": "normal",
+  "duracao_original_s": 241.968,
+  "palavras_validas": 752,
+  "pausas_examinadas": 55,
+  "cortes_sugeridos": 23,
+  "cortes_revisar": 23,
+  "tempo_removido_s": 11.17,
+  "duracao_prevista_s": 230.798,
+  "cortes_remover": [
+    {
+      "inicio": 1.385,
+      "fim": 3.975,
+      "duracao": 2.59
+    },
+    {
+      "inicio": 6.405,
+      "fim": 9.535,
+      "duracao": 3.13
+    },
+    {
+      "inicio": 11.265,
+      "fim": 11.675,
+      "duracao": 0.41
+    },
+    {
+      "inicio": 22.405,
+      "fim": 22.515,
+      "duracao": 0.11
+    },
+    {
+      "inicio": 35.785,
+      "fim": 36.055,
+      "duracao": 0.27
+    },
+    {
+      "inicio": 47.045,
+      "fim": 47.815,
+      "duracao": 0.77
+    },
+    {
+      "inicio": 58.685,
+      "fim": 58.935,
+      "duracao": 0.25
+    },
+    {
+      "inicio": 85.865,
+      "fim": 86.075,
+      "duracao": 0.21
+    },
+    {
+      "inicio": 94.045,
+      "fim": 94.655,
+      "duracao": 0.61
+    },
+    {
+      "inicio": 110.765,
+      "fim": 110.915,
+      "duracao": 0.15
+    },
+    {
+      "inicio": 119.845,
+      "fim": 120.115,
+      "duracao": 0.27
+    },
+    {
+      "inicio": 122.785,
+      "fim": 122.995,
+      "duracao": 0.21
+    },
+    {
+      "inicio": 126.945,
+      "fim": 127.275,
+      "duracao": 0.33
+    },
+    {
+      "inicio": 141.145,
+      "fim": 141.335,
+      "duracao": 0.19
+    },
+    {
+      "inicio": 151.485,
+      "fim": 151.715,
+      "duracao": 0.23
+    },
+    {
+      "inicio": 154.385,
+      "fim": 154.515,
+      "duracao": 0.13
+    },
+    {
+      "inicio": 170.645,
+      "fim": 170.815,
+      "duracao": 0.17
+    },
+    {
+      "inicio": 174.345,
+      "fim": 174.475,
+      "duracao": 0.13
+    },
+    {
+      "inicio": 185.285,
+      "fim": 185.475,
+      "duracao": 0.19
+    },
+    {
+      "inicio": 193.025,
+      "fim": 193.155,
+      "duracao": 0.13
+    },
+    {
+      "inicio": 211.065,
+      "fim": 211.155,
+      "duracao": 0.09
+    },
+    {
+      "inicio": 219.545,
+      "fim": 219.815,
+      "duracao": 0.27
+    },
+    {
+      "inicio": 235.505,
+      "fim": 235.835,
+      "duracao": 0.33
+    }
+  ],
+  "candidatas_detalhes": [
+    {
+      "pausa_inicio": 1.21,
+      "pausa_fim": 4.15,
+      "pausa_duracao": 2.94,
+      "corte_inicio": 1.385,
+      "corte_fim": 3.975,
+      "corte_duracao": 2.59,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -32.0
+    },
+    {
+      "pausa_inicio": 6.23,
+      "pausa_fim": 9.71,
+      "pausa_duracao": 3.48,
+      "corte_inicio": 6.405,
+      "corte_fim": 9.535,
+      "corte_duracao": 3.13,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -34.7
+    },
+    {
+      "pausa_inicio": 11.09,
+      "pausa_fim": 11.85,
+      "pausa_duracao": 0.76,
+      "corte_inicio": 11.265,
+      "corte_fim": 11.675,
+      "corte_duracao": 0.41,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.3
+    },
+    {
+      "pausa_inicio": 22.23,
+      "pausa_fim": 22.69,
+      "pausa_duracao": 0.46,
+      "corte_inicio": 22.405,
+      "corte_fim": 22.515,
+      "corte_duracao": 0.11,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -34.2
+    },
+    {
+      "pausa_inicio": 35.61,
+      "pausa_fim": 36.23,
+      "pausa_duracao": 0.62,
+      "corte_inicio": 35.785,
+      "corte_fim": 36.055,
+      "corte_duracao": 0.27,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -36.9
+    },
+    {
+      "pausa_inicio": 46.87,
+      "pausa_fim": 47.99,
+      "pausa_duracao": 1.12,
+      "corte_inicio": 47.045,
+      "corte_fim": 47.815,
+      "corte_duracao": 0.77,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -32.7
+    },
+    {
+      "pausa_inicio": 58.51,
+      "pausa_fim": 59.11,
+      "pausa_duracao": 0.6,
+      "corte_inicio": 58.685,
+      "corte_fim": 58.935,
+      "corte_duracao": 0.25,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.8
+    },
+    {
+      "pausa_inicio": 85.69,
+      "pausa_fim": 86.25,
+      "pausa_duracao": 0.56,
+      "corte_inicio": 85.865,
+      "corte_fim": 86.075,
+      "corte_duracao": 0.21,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -36.9
+    },
+    {
+      "pausa_inicio": 93.87,
+      "pausa_fim": 94.83,
+      "pausa_duracao": 0.96,
+      "corte_inicio": 94.045,
+      "corte_fim": 94.655,
+      "corte_duracao": 0.61,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.1
+    },
+    {
+      "pausa_inicio": 110.59,
+      "pausa_fim": 111.09,
+      "pausa_duracao": 0.5,
+      "corte_inicio": 110.765,
+      "corte_fim": 110.915,
+      "corte_duracao": 0.15,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.9
+    },
+    {
+      "pausa_inicio": 119.67,
+      "pausa_fim": 120.29,
+      "pausa_duracao": 0.62,
+      "corte_inicio": 119.845,
+      "corte_fim": 120.115,
+      "corte_duracao": 0.27,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -33.8
+    },
+    {
+      "pausa_inicio": 122.61,
+      "pausa_fim": 123.17,
+      "pausa_duracao": 0.56,
+      "corte_inicio": 122.785,
+      "corte_fim": 122.995,
+      "corte_duracao": 0.21,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -36.7
+    },
+    {
+      "pausa_inicio": 126.77,
+      "pausa_fim": 127.45,
+      "pausa_duracao": 0.68,
+      "corte_inicio": 126.945,
+      "corte_fim": 127.275,
+      "corte_duracao": 0.33,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -34.6
+    },
+    {
+      "pausa_inicio": 140.97,
+      "pausa_fim": 141.51,
+      "pausa_duracao": 0.54,
+      "corte_inicio": 141.145,
+      "corte_fim": 141.335,
+      "corte_duracao": 0.19,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -39.4
+    },
+    {
+      "pausa_inicio": 151.31,
+      "pausa_fim": 151.89,
+      "pausa_duracao": 0.58,
+      "corte_inicio": 151.485,
+      "corte_fim": 151.715,
+      "corte_duracao": 0.23,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.5
+    },
+    {
+      "pausa_inicio": 154.21,
+      "pausa_fim": 154.69,
+      "pausa_duracao": 0.48,
+      "corte_inicio": 154.385,
+      "corte_fim": 154.515,
+      "corte_duracao": 0.13,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -31.2
+    },
+    {
+      "pausa_inicio": 170.47,
+      "pausa_fim": 170.99,
+      "pausa_duracao": 0.52,
+      "corte_inicio": 170.645,
+      "corte_fim": 170.815,
+      "corte_duracao": 0.17,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -39.3
+    },
+    {
+      "pausa_inicio": 174.17,
+      "pausa_fim": 174.65,
+      "pausa_duracao": 0.48,
+      "corte_inicio": 174.345,
+      "corte_fim": 174.475,
+      "corte_duracao": 0.13,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -36.7
+    },
+    {
+      "pausa_inicio": 185.11,
+      "pausa_fim": 185.65,
+      "pausa_duracao": 0.54,
+      "corte_inicio": 185.285,
+      "corte_fim": 185.475,
+      "corte_duracao": 0.19,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.5
+    },
+    {
+      "pausa_inicio": 192.85,
+      "pausa_fim": 193.33,
+      "pausa_duracao": 0.48,
+      "corte_inicio": 193.025,
+      "corte_fim": 193.155,
+      "corte_duracao": 0.13,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -34.3
+    },
+    {
+      "pausa_inicio": 210.89,
+      "pausa_fim": 211.33,
+      "pausa_duracao": 0.44,
+      "corte_inicio": 211.065,
+      "corte_fim": 211.155,
+      "corte_duracao": 0.09,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -39.5
+    },
+    {
+      "pausa_inicio": 219.37,
+      "pausa_fim": 219.99,
+      "pausa_duracao": 0.62,
+      "corte_inicio": 219.545,
+      "corte_fim": 219.815,
+      "corte_duracao": 0.27,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -36.9
+    },
+    {
+      "pausa_inicio": 235.33,
+      "pausa_fim": 236.01,
+      "pausa_duracao": 0.68,
+      "corte_inicio": 235.505,
+      "corte_fim": 235.835,
+      "corte_duracao": 0.33,
+      "criterio": "REVISAR_RESPIRACAO_OU_RUIDO",
+      "energia_dbfs": -37.5
+    }
+  ],
+  "trechos_manter": [
+    {
+      "inicio": 0,
+      "fim": 1.385
+    },
+    {
+      "inicio": 3.975,
+      "fim": 6.405
+    },
+    {
+      "inicio": 9.535,
+      "fim": 11.265
+    },
+    {
+      "inicio": 11.675,
+      "fim": 22.405
+    },
+    {
+      "inicio": 22.515,
+      "fim": 35.785
+    },
+    {
+      "inicio": 36.055,
+      "fim": 47.045
+    },
+    {
+      "inicio": 47.815,
+      "fim": 58.685
+    },
+    {
+      "inicio": 58.935,
+      "fim": 85.865
+    },
+    {
+      "inicio": 86.075,
+      "fim": 94.045
+    },
+    {
+      "inicio": 94.655,
+      "fim": 110.765
+    },
+    {
+      "inicio": 110.915,
+      "fim": 119.845
+    },
+    {
+      "inicio": 120.115,
+      "fim": 122.785
+    },
+    {
+      "inicio": 122.995,
+      "fim": 126.945
+    },
+    {
+      "inicio": 127.275,
+      "fim": 141.145
+    },
+    {
+      "inicio": 141.335,
+      "fim": 151.485
+    },
+    {
+      "inicio": 151.715,
+      "fim": 154.385
+    },
+    {
+      "inicio": 154.515,
+      "fim": 170.645
+    },
+    {
+      "inicio": 170.815,
+      "fim": 174.345
+    },
+    {
+      "inicio": 174.475,
+      "fim": 185.285
+    },
+    {
+      "inicio": 185.475,
+      "fim": 193.025
+    },
+    {
+      "inicio": 193.155,
+      "fim": 211.065
+    },
+    {
+      "inicio": 211.155,
+      "fim": 219.545
+    },
+    {
+      "inicio": 219.815,
+      "fim": 235.505
+    },
+    {
+      "inicio": 235.835,
+      "fim": 241.968
+    }
+  ],
+  "avisos": [
+    "Somente pausas entre palavras reconhecidas; nao remove palavras intencionalmente.",
+    "Timestamps Whisper podem estar errados: confira o preview.",
+    "0.8 adiciona margem de seguranca de palavras e rejeita bordas acusticamente ativas.",
+    "Ainda nao modifica o Premiere."
+  ]
+}

@@ -1,0 +1,9 @@
+PIPE EDITOR AI 0.8 - TESTE DE PROTECAO DE PALAVRAS
+
+Copie smart_cut_v08.py e EXECUTAR_SMART_CUT_08.bat para a pasta motor_ia.
+Execute EXECUTAR_SMART_CUT_08.bat e selecione Audio.mp3 ORIGINAL e resultado.json da versao 0.3.
+
+Mudancas: margens maiores junto as palavras; veto de cortes com atividade sonora nas bordas; rejeicao de trechos sonoros sem area suficientemente silenciosa.
+
+Importante: nao e garantido que todas as palavras sejam preservadas, pois os tempos do Whisper podem estar imprecisos. Confira a previa antes de qualquer uso em video.
+Nao modifica o Premiere.

@@ -1,0 +1,138 @@
+{
+  "original": "/mnt/data/Audio.mp3",
+  "manual": "/mnt/data/resultado_v08_preview.mp3",
+  "duracao_original_s": 241.968,
+  "duracao_manual_s": 230.798,
+  "tempo_total_removido_s": 11.17,
+  "ancoras_validas": 283,
+  "intervalos_candidatos": 14,
+  "cortes_aproximados": [
+    {
+      "intervalo_original_aproximado": [
+        1.0,
+        4.2
+      ],
+      "duracao_removida_estimada_s": 2.59,
+      "confianca_ancoras": 0.991,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        5.8,
+        9.8
+      ],
+      "duracao_removida_estimada_s": 3.13,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        10.6,
+        12.2
+      ],
+      "duracao_removida_estimada_s": 0.41,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        35.4,
+        36.2
+      ],
+      "duracao_removida_estimada_s": 0.27,
+      "confianca_ancoras": 0.989,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        46.6,
+        48.2
+      ],
+      "duracao_removida_estimada_s": 0.77,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        57.8,
+        59.4
+      ],
+      "duracao_removida_estimada_s": 0.25,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        85.0,
+        86.6
+      ],
+      "duracao_removida_estimada_s": 0.21,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        93.8,
+        95.4
+      ],
+      "duracao_removida_estimada_s": 0.61,
+      "confianca_ancoras": 0.978,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        119.4,
+        120.2
+      ],
+      "duracao_removida_estimada_s": 0.27,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        121.8,
+        123.4
+      ],
+      "duracao_removida_estimada_s": 0.21,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        126.6,
+        127.4
+      ],
+      "duracao_removida_estimada_s": 0.33,
+      "confianca_ancoras": 0.962,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        150.6,
+        152.2
+      ],
+      "duracao_removida_estimada_s": 0.23,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        219.4,
+        220.2
+      ],
+      "duracao_removida_estimada_s": 0.27,
+      "confianca_ancoras": 0.762,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    },
+    {
+      "intervalo_original_aproximado": [
+        234.6,
+        236.2
+      ],
+      "duracao_removida_estimada_s": 0.33,
+      "confianca_ancoras": 1.0,
+      "observacao": "Localização aproximada; não usar como ponto de corte sem refinamento."
+    }
+  ],
+  "aviso": "Os intervalos são estimativas por alinhamento de áudio comprimido, não um EDL pronto para aplicar."
+}
