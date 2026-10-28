@@ -347,3 +347,36 @@ small {
 #checkNativeRazorButton {
   margin-top: 10px;
 }
+
+
+/* PIPE EDITOR AI 0.9 — AUDITORIA EDITORIAL */
+#sequenceAuditStatus {
+  margin: 12px 0 8px;
+  padding: 12px;
+  line-height: 1.6;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+#sequenceAuditDetails .clip {
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.audit-control {
+  margin: 12px 0;
+}
+.audit-control label {
+  display: block;
+  color: #b3bfd0;
+  margin-bottom: 6px;
+}
+.audit-control select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  background: #141b27;
+  border: 1px solid #4584d7;
+  color: #eaf0fb;
+}

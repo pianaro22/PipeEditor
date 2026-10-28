@@ -1663,3 +1663,379 @@ checkNativeRazorButton.addEventListener("click", async () => {
     checkNativeRazorButton.disabled = false;
   }
 });
+
+
+// ==========================================
+// PIPE EDITOR AI 0.9 — VALIDAÇÃO NO PREMIERE
+// SOMENTE LEITURA: NUNCA MODIFICA A TIMELINE
+// ==========================================
+const registerOriginalButton =
+  document.getElementById("registerOriginalButton");
+const checkImportedSequenceButton =
+  document.getElementById("checkImportedSequenceButton");
+const sequenceAuditStatus =
+  document.getElementById("sequenceAuditStatus");
+const sequenceAuditDetails =
+  document.getElementById("sequenceAuditDetails");
+const sequenceAuditMode =
+  document.getElementById("sequenceAuditMode");
+
+let smartCutOriginalAudit = null;
+
+function auditFrame(seconds, fps) {
+  return Math.round(Number(seconds) * fps);
+}
+
+async function auditSnapshot(app, seq) {
+  const settings = await seq.getSettings();
+  if (!settings || typeof settings.getVideoFrameRate !== "function") {
+    throw new Error("A API não fornece a taxa de quadros da sequência.");
+  }
+
+  const frameRate = await settings.getVideoFrameRate();
+  const fps = Number(frameRate?.value);
+
+  if (!Number.isFinite(fps) || fps <= 0) {
+    throw new Error("Taxa de quadros inválida na sequência.");
+  }
+
+  const [duration, videoCount, audioCount] = await Promise.all([
+    seq.getEndTime(),
+    seq.getVideoTrackCount(),
+    seq.getAudioTrackCount()
+  ]);
+
+  const output = {
+    name: String(seq.name),
+    guid: String(seq.guid),
+    fps,
+    duration: duration.seconds,
+    tracks: []
+  };
+
+  for (const kind of ["V", "A"]) {
+    const count = kind === "V" ? videoCount : audioCount;
+    for (let index = 0; index < count; index++) {
+      const track = kind === "V"
+        ? await seq.getVideoTrack(index)
+        : await seq.getAudioTrack(index);
+      const items = await track.getTrackItems(
+        app.Constants.TrackItemType.CLIP,
+        false
+      );
+      const clips = [];
+      for (const item of items) {
+        const [name, start, end, mediaIn, mediaOut] = await Promise.all([
+          item.getName(),
+          item.getStartTime(),
+          item.getEndTime(),
+          item.getInPoint(),
+          item.getOutPoint()
+        ]);
+
+        clips.push({
+          name: String(name),
+          start: start.seconds,
+          end: end.seconds,
+          sourceIn: mediaIn.seconds,
+          sourceOut: mediaOut.seconds
+        });
+      }
+      clips.sort((a, b) => a.start - b.start || a.end - b.end);
+      output.tracks.push({ id: kind + (index + 1), clips });
+    }
+  }
+
+  return output;
+}
+
+function buildAuditExpectations(source, cuts) {
+  const fps = source.fps;
+  const endFrame = auditFrame(source.duration, fps);
+  const ranges = cuts.map((c, i) => {
+    const a = auditFrame(c.start, fps);
+    const b = auditFrame(c.end, fps);
+    if (a < 0 || b <= a || b > endFrame) {
+      throw new Error("Corte " + (i + 1) + " inválido após arredondamento.");
+    }
+    return { a, b };
+  }).sort((a, b) => a.a - b.a);
+
+  for (let i = 1; i < ranges.length; i++) {
+    if (ranges[i].a < ranges[i - 1].b) {
+      throw new Error("Cortes sobrepostos após ajuste aos frames.");
+    }
+  }
+
+  const totalRemoved = ranges.reduce((sum, cut) => sum + cut.b - cut.a, 0);
+  function removedBefore(frame) {
+    let result = 0;
+    for (const cut of ranges) {
+      if (frame <= cut.a) break;
+      result += Math.max(0, Math.min(frame, cut.b) - cut.a);
+    }
+    return result;
+  }
+
+  const tracks = source.tracks.map(track => {
+    const clips = [];
+    for (const original of track.clips) {
+      const start = auditFrame(original.start, fps);
+      const end = auditFrame(original.end, fps);
+      const sourceIn = auditFrame(original.sourceIn, fps);
+      const sourceOut = auditFrame(original.sourceOut, fps);
+
+      if (
+        Math.abs((sourceOut - sourceIn) - (end - start)) > 2
+      ) {
+        throw new Error(
+          "Velocidade ou duração de mídia não compatível em " +
+          track.id + " (" + original.name + ")."
+        );
+      }
+
+      // Particiona o clipe original preservando cada intervalo útil.
+      let cursor = start;
+
+      function keep(a, b) {
+        if (b <= a) return;
+        const newStart = a - removedBefore(a);
+        const newEnd = b - removedBefore(b);
+        clips.push({
+          name: original.name,
+          start: newStart,
+          end: newEnd,
+          sourceIn: sourceIn + a - start,
+          sourceOut: sourceIn + b - start
+        });
+      }
+
+      for (const cut of ranges) {
+        if (cut.b <= cursor) continue;
+        if (cut.a >= end) break;
+        keep(cursor, Math.min(cut.a, end));
+        cursor = Math.max(cursor, cut.b);
+        if (cursor >= end) break;
+      }
+      keep(cursor, end);
+    }
+
+    clips.sort((a, b) => a.start - b.start || a.end - b.end);
+    return { id: track.id, clips };
+  });
+
+  return {
+    fps,
+    totalRemoved,
+    duration: endFrame - totalRemoved,
+    cuts: ranges.length,
+    tracks
+  };
+}
+
+function compareAudit(expected, actual) {
+  const issues = [];
+  const summaries = [];
+  const fpsTolerance = 0.01;
+
+  if (Math.abs(expected.fps - actual.fps) > fpsTolerance) {
+    issues.push(
+      "FPS divergente: original " + expected.fps +
+      ", editada " + actual.fps
+    );
+    return { issues, summaries };
+  }
+
+  function frames(seconds) {
+    return auditFrame(seconds, expected.fps);
+  }
+
+  const actualDuration = frames(actual.duration);
+  if (Math.abs(actualDuration - expected.duration) > 1) {
+    issues.push(
+      "Duração: esperado " + expected.duration +
+      " frames, obtido " + actualDuration + " frames"
+    );
+  }
+
+  for (const track of expected.tracks) {
+    const found = actual.tracks.find(t => t.id === track.id);
+    const actualClips = found ? found.clips : [];
+
+    summaries.push(
+      track.id + ": " + actualClips.length +
+      " / " + track.clips.length + " segmentos"
+    );
+
+    if (actualClips.length !== track.clips.length) {
+      issues.push(
+        track.id + ": esperado " + track.clips.length +
+        " segmentos, encontrado " + actualClips.length
+      );
+      continue;
+    }
+
+    for (let i = 0; i < track.clips.length; i++) {
+      const a = track.clips[i];
+      const b = actualClips[i];
+      const label = track.id + " segmento " + (i + 1);
+      if (
+        a.name.trim().toLowerCase() !==
+        b.name.trim().toLowerCase()
+      ) {
+        issues.push(label + ": fonte diferente.");
+      }
+
+      for (const field of ["start", "end", "sourceIn", "sourceOut"]) {
+        const got = frames(b[field]);
+        const expectedFrame = a[field];
+        // A importação de XML pode arredondar a mídia ao frame.
+        // 1 frame para a timeline; 2 para tempos de mídia.
+        const tolerance =
+          field === "sourceIn" || field === "sourceOut" ? 2 : 1;
+        if (Math.abs(got - expectedFrame) > tolerance) {
+          issues.push(
+            label + ": " + field + " esperado " +
+            expectedFrame + ", obtido " + got + " frames."
+          );
+        }
+      }
+    }
+  }
+
+  const additionalTracks = actual.tracks.filter(
+    t => !expected.tracks.some(e => e.id === t.id) &&
+      t.clips.length > 0
+  );
+  for (const track of additionalTracks) {
+    issues.push(
+      "Faixa adicional com clipes: " + track.id +
+      " (" + track.clips.length + ")."
+    );
+  }
+
+  return { issues, summaries };
+}
+
+registerOriginalButton.addEventListener("click", async () => {
+  registerOriginalButton.disabled = true;
+  sequenceAuditStatus.textContent = "Lendo sequência original...";
+  sequenceAuditDetails.textContent = "";
+
+  try {
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto ativo.");
+    const seq = await project.getActiveSequence();
+    if (!seq) throw new Error("Nenhuma sequência ativa.");
+
+    const source = await auditSnapshot(app, seq);
+
+    if (importedCuts && importedCuts.length) {
+      const expected = buildAuditExpectations(source, importedCuts);
+      if (expected.duration >= auditFrame(source.duration, source.fps)) {
+        throw new Error("A sequência aberta parece já estar editada.");
+      }
+    }
+
+    smartCutOriginalAudit = source;
+    sequenceAuditStatus.className = "success";
+    sequenceAuditStatus.textContent =
+      "Original registrada: " + source.name + "\n" +
+      "Duração: " + fmt(source.duration) + "\n" +
+      "FPS: " + source.fps + "\n" +
+      "Agora abra a sequência editada e clique em Validar.";
+  } catch (err) {
+    sequenceAuditStatus.className = "error";
+    sequenceAuditStatus.textContent =
+      "Erro ao registrar original: " + (err?.message || String(err));
+    console.error(err);
+  } finally {
+    registerOriginalButton.disabled = false;
+  }
+});
+
+checkImportedSequenceButton.addEventListener("click", async () => {
+  checkImportedSequenceButton.disabled = true;
+  sequenceAuditStatus.textContent = "Conferindo todos os segmentos...";
+  sequenceAuditDetails.textContent = "";
+
+  try {
+    if (!smartCutOriginalAudit) {
+      throw new Error("Registre primeiro a sequência original.");
+    }
+    if (!importedCuts || !importedCuts.length) {
+      throw new Error("Importe primeiro o JSON dos cortes.");
+    }
+
+    const mode = sequenceAuditMode.value;
+    const selected = mode === "first"
+      ? importedCuts.slice(0, 1)
+      : importedCuts;
+
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto ativo.");
+    const sequence = await project.getActiveSequence();
+    if (!sequence) throw new Error("Nenhuma sequência ativa.");
+    if (String(sequence.guid) === smartCutOriginalAudit.guid) {
+      throw new Error(
+        "Você ainda está na sequência original. " +
+        "Abra a sequência importada antes da validação."
+      );
+    }
+
+    const actual = await auditSnapshot(app, sequence);
+    const expected = buildAuditExpectations(
+      smartCutOriginalAudit,
+      selected
+    );
+    const result = compareAudit(expected, actual);
+
+    sequenceAuditStatus.className =
+      result.issues.length ? "warning" : "success";
+    sequenceAuditStatus.textContent =
+      "Sequência: " + actual.name + "\n" +
+      "Intervalos: " + selected.length + "\n" +
+      "Remoção planejada: " +
+      fmt(expected.totalRemoved / expected.fps) + "\n" +
+      "Duração prevista: " +
+      fmt(expected.duration / expected.fps) + "\n" +
+      "Duração encontrada: " +
+      fmt(actual.duration) + "\n\n" +
+      (result.issues.length
+        ? "Diferenças encontradas: " + result.issues.length +
+          "\nConfira os detalhes abaixo."
+        : "Validação temporal aprovada. " +
+          "Fontes, in/out e posições conferidos.");
+
+    for (const lineText of result.summaries) {
+      line(sequenceAuditDetails, "clip", lineText);
+    }
+    for (const issue of result.issues.slice(0, 25)) {
+      line(sequenceAuditDetails, "clip", "ATENÇÃO: " + issue);
+    }
+    if (result.issues.length > 25) {
+      line(
+        sequenceAuditDetails,
+        "clip",
+        "... e mais " + (result.issues.length - 25) +
+        " diferença(s)."
+      );
+    }
+    line(
+      sequenceAuditDetails,
+      "clip",
+      "A validação é estrutural. Escute as emendas para " +
+      "confirmar que nenhuma palavra foi cortada."
+    );
+
+  } catch (err) {
+    sequenceAuditStatus.className = "error";
+    sequenceAuditStatus.textContent =
+      "Erro na validação: " + (err?.message || String(err));
+    console.error(err);
+  } finally {
+    checkImportedSequenceButton.disabled = false;
+  }
+});

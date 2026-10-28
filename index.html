@@ -9,7 +9,7 @@
 <body>
 <main>
 
-  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.8</div>
+  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.9</div>
 
   <h1>PIPE <span>EDITOR AI</span></h1>
 
@@ -202,6 +202,37 @@
       Nenhum corte é realizado nesta seção.
       O XML exportado é um novo arquivo, não modifica a
       sequência existente.
+    </small>
+  </section>
+
+
+  <section>
+    <h2>10 · Smart Cut 0.9 — Validação da edição</h2>
+    <p>
+      Compare a sequência importada com a original usando
+      duração, segmentos, posições e pontos de mídia.
+      Nenhum clipe será alterado.
+    </p>
+    <button id="registerOriginalButton" class="secondary">
+      1. Registrar sequência original
+    </button>
+    <div class="audit-control">
+      <label for="sequenceAuditMode">Sequência que será validada:</label>
+      <select id="sequenceAuditMode">
+        <option value="all" selected>23 cortes (sequência completa)</option>
+        <option value="first">Somente o primeiro corte</option>
+      </select>
+    </div>
+    <button id="checkImportedSequenceButton" class="secondary">
+      2. Validar sequência importada
+    </button>
+    <div id="sequenceAuditStatus" role="status">
+      Importe o JSON, registre a original e abra a editada.
+    </div>
+    <div id="sequenceAuditDetails"></div>
+    <small>
+      Apenas leitura. O resultado não verifica qualidade de
+      áudio, efeitos ou gerenciamento de cores.
     </small>
   </section>
 
