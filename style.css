@@ -307,3 +307,27 @@ small {
 
   line-height: 1.8;
 }
+
+/* PIPE EDITOR AI 0.7 */
+#previewCutPlanStatus {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+#previewCutPlanDetails {
+  margin-top: 12px;
+}
+#previewCutPlanDetails .clip {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+#previewCutPlanDetails .warning {
+  padding: 12px;
+  border-radius: 7px;
+  white-space: pre-wrap;
+}
