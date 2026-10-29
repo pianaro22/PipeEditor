@@ -9,7 +9,7 @@
 <body>
 <main>
 
-  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 1.0</div>
+  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 1.1</div>
 
   <h1>PIPE <span>EDITOR AI</span></h1>
 
@@ -238,7 +238,7 @@
 
 
   <section>
-    <h2>11 · Smart Cut 1.0 — Revisão das emendas</h2>
+    <h2>11 · Smart Cut 1.1 — Revisão e ajustes</h2>
     <p>
       Navegue pelos 23 cortes na sequência editada,
       escute cada emenda e registre o resultado.
@@ -246,6 +246,9 @@
     </p>
     <button id="reviewStartButton" class="secondary">
       Iniciar revisão dos 23 cortes
+    </button>
+    <button id="reviewImportButton" class="secondary">
+      Importar revisão anterior (JSON)
     </button>
     <div id="reviewStatus" role="status">
       Importe o JSON, registre a sequência original na seção 10
@@ -255,6 +258,9 @@
       <strong id="reviewCounter">Emenda —</strong>
       <div id="reviewTime">Aguardando revisão.</div>
       <div id="reviewProgress">Aprovados: 0 · Revisar: 0 · Pendentes: 23</div>
+      <button id="reviewUnclassifiedButton" class="secondary">
+        Próximo corte sem motivo/ação
+      </button>
       <div class="review-buttons">
         <button id="reviewPreviousButton" class="secondary" disabled>Anterior</button>
         <button id="reviewNextButton" class="secondary" disabled>Próxima</button>
@@ -263,7 +269,27 @@
         <button id="reviewBeforeButton" class="secondary">Ir 1 s antes</button>
         <button id="reviewJumpButton" class="secondary">Ir à emenda</button>
       </div>
-      <label for="reviewNote">Observação sobre este corte (opcional)</label>
+      <label for="reviewReason">Qual o problema deste corte?</label>
+      <select id="reviewReason">
+        <option value="">Selecione o motivo</option>
+        <option value="salto_visual">Salto visual / emenda perceptível</option>
+        <option value="fala_cortada">Palavra ou sílaba cortada</option>
+        <option value="audio_brusco">Áudio com transição brusca</option>
+        <option value="respiracao_restante">Respiração não removida</option>
+        <option value="pausa_natural">Pausa natural removida</option>
+        <option value="outro">Outro problema</option>
+      </select>
+      <label for="reviewAction">Qual ajuste desejado?</label>
+      <select id="reviewAction">
+        <option value="">Selecione o ajuste</option>
+        <option value="ajustar_limites">Ajustar os pontos de início/fim</option>
+        <option value="cancelar_corte">Cancelar esse corte</option>
+        <option value="identificar_novo_trecho">Identificar outro trecho de respiração</option>
+        <option value="trocar_camera">Rever câmera / esconder salto visual</option>
+        <option value="transicao_audio">Aplicar tratamento na emenda do áudio</option>
+        <option value="investigar">Investigar manualmente</option>
+      </select>
+      <label for="reviewNote">Observação e horário exato (opcional)</label>
       <textarea id="reviewNote" rows="3" placeholder="Ex.: cortou a primeira sílaba; respiração perceptível"></textarea>
       <div class="review-buttons">
         <button id="reviewApproveButton">Aprovar corte</button>

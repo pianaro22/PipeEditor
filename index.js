@@ -2058,6 +2058,10 @@ const reviewCounter = document.getElementById("reviewCounter");
 const reviewTime = document.getElementById("reviewTime");
 const reviewProgress = document.getElementById("reviewProgress");
 const reviewNote = document.getElementById("reviewNote");
+const reviewReason = document.getElementById("reviewReason");
+const reviewAction = document.getElementById("reviewAction");
+const reviewImportButton = document.getElementById("reviewImportButton");
+const reviewUnclassifiedButton = document.getElementById("reviewUnclassifiedButton");
 
 let reviewSession = null;
 let reviewIndex = 0;
@@ -2086,7 +2090,9 @@ function makeReviewSeams(cuts, fps) {
       seamSeconds: seamFrame / fps,
       removedFrames: endFrame - startFrame,
       verdict: "pendente",
-      note: ""
+      note: "",
+      reason: "",
+      suggestion: ""
     };
 
     removedBefore += item.removedFrames;
@@ -2101,7 +2107,20 @@ function currentReviewCut() {
 
 function saveCurrentReviewNote() {
   const cut = currentReviewCut();
-  if (cut) cut.note = String(reviewNote.value || "").trim();
+  if (cut) {
+    cut.note = String(reviewNote.value || "").trim();
+    cut.reason = String(reviewReason.value || "");
+    cut.suggestion = String(reviewAction.value || "");
+  }
+}
+
+function countUnclassifiedFlags() {
+  return reviewSession
+    ? reviewSession.cuts.filter(
+        c => c.verdict === "revisar" &&
+             (!c.reason || !c.suggestion)
+      ).length
+    : 0;
 }
 
 function paintReview() {
@@ -2132,8 +2151,11 @@ function paintReview() {
   reviewProgress.textContent =
     "Aprovados: " + counts.aprovado +
     " · Revisar: " + counts.revisar +
-    " · Pendentes: " + counts.pendente;
+    " · Pendentes: " + counts.pendente +
+    " · Sem motivo/ação: " + countUnclassifiedFlags();
   reviewNote.value = cut.note;
+  reviewReason.value = cut.reason || "";
+  reviewAction.value = cut.suggestion || "";
 
   reviewPreviousButton.disabled = reviewIndex === 0;
   reviewNextButton.disabled = reviewIndex === total - 1;
@@ -2293,7 +2315,22 @@ function markReview(verdict) {
   return handleReviewNavigation(async () => {
     await getAuditedReviewSequence();
     saveCurrentReviewNote();
-    currentReviewCut().verdict = verdict;
+    const selected = currentReviewCut();
+    if (
+      verdict === "revisar" &&
+      (!selected.reason || !selected.suggestion)
+    ) {
+      throw new Error(
+        "Para marcar como 'Precisa revisar', selecione " +
+        "um motivo e o ajuste desejado. " +
+        "Isso evita relatórios sem diagnóstico."
+      );
+    }
+    selected.verdict = verdict;
+    if (verdict === "aprovado") {
+      selected.reason = "";
+      selected.suggestion = "";
+    }
     const wasLast = reviewIndex === reviewSession.cuts.length - 1;
     if (!wasLast) reviewIndex++;
     paintReview();
@@ -2324,7 +2361,7 @@ reviewExportButton.addEventListener("click", () =>
     ).length;
 
     const report = {
-      version: "1.0-review",
+      version: "1.1-review",
       sourceSequence: reviewSession.sourceName,
       editedSequence: reviewSession.sequenceName,
       fps: reviewSession.fps,
@@ -2333,6 +2370,14 @@ reviewExportButton.addEventListener("click", () =>
       ).length,
       approved,
       flagged,
+      unclassifiedFlagged: countUnclassifiedFlags(),
+      reasons: reviewSession.cuts.reduce((counts, cut) => {
+        if (cut.verdict === "revisar") {
+          const key = cut.reason || "sem_motivo";
+          counts[key] = (counts[key] || 0) + 1;
+        }
+        return counts;
+      }, {}),
       exportedAt: new Date().toISOString(),
       cuts: reviewSession.cuts.map(c => ({ ...c }))
     };
@@ -2343,6 +2388,141 @@ reviewExportButton.addEventListener("click", () =>
       "Relatório salvo: " + file.name + "\n" +
       "Aprovados: " + approved + " · Revisar: " +
       flagged + ".\n" +
+      "Sem classificação: " + countUnclassifiedFlags() +
+      ".\nNenhum clipe foi modificado.";
+  })
+);
+
+
+// ==========================================
+// PIPE EDITOR AI 1.1 — IMPORTAR REVISÃO E CLASSIFICAR ERROS
+// ==========================================
+
+// A revisão é associada à mesma fonte e mesmos frames:
+// nunca transponha avaliações de outro áudio ou outra edição.
+function validateReviewImport(report, session) {
+  if (!report || !Array.isArray(report.cuts)) {
+    throw new Error("O arquivo não contém uma lista de cortes revisados.");
+  }
+  if (!session) throw new Error("Inicie a revisão antes de importar.");
+  if (Math.abs(Number(report.fps) - session.fps) > 0.01) {
+    throw new Error("FPS diferente do relatório atual.");
+  }
+  if (
+    String(report.sourceSequence) !== session.sourceName ||
+    String(report.editedSequence) !== session.sequenceName
+  ) {
+    throw new Error(
+      "O relatório pertence a outras sequências. " +
+      "Verifique o nome da original e da editada."
+    );
+  }
+  if (report.cuts.length !== session.cuts.length) {
+    throw new Error("Quantidade de cortes diferente do relatório.");
+  }
+
+  const matched = [];
+  for (let i = 0; i < session.cuts.length; i++) {
+    const previous = report.cuts[i];
+    const current = session.cuts[i];
+    if (
+      Number(previous.index) !== current.index ||
+      Number(previous.startFrame) !== current.startFrame ||
+      Number(previous.endFrame) !== current.endFrame ||
+      Number(previous.seamFrame) !== current.seamFrame
+    ) {
+      throw new Error(
+        "Corte " + (i + 1) +
+        " não corresponde à edição atual. Nada foi importado."
+      );
+    }
+
+    const verdict = String(previous.verdict || "pendente");
+    if (!["aprovado", "revisar", "pendente"].includes(verdict)) {
+      throw new Error("Avaliação inválida no corte " + (i + 1));
+    }
+
+    matched.push({
+      verdict,
+      note: String(previous.note || ""),
+      reason: String(previous.reason || ""),
+      suggestion: String(previous.suggestion || "")
+    });
+  }
+  return matched;
+}
+
+reviewImportButton.addEventListener("click", async () => {
+  reviewImportButton.disabled = true;
+  try {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+
+    const file = await fs.getFileForOpening({
+      types: ["json"],
+      allowMultiple: false
+    });
+    if (!file) return;
+
+    const report = JSON.parse(await file.read());
+    const revisions = validateReviewImport(report, reviewSession);
+
+    // Só aplica dados depois de validar TODOS os cortes.
+    for (let i = 0; i < revisions.length; i++) {
+      Object.assign(reviewSession.cuts[i], revisions[i]);
+    }
+
+    reviewIndex = 0;
+    paintReview();
+    reviewStatus.className = "success";
+    reviewStatus.textContent =
+      "Relatório anterior importado: " + file.name + "\n" +
+      "Aprovações e anotações restauradas.\n" +
+      "Faltam classificar " + countUnclassifiedFlags() +
+      " corte(s) sinalizado(s).\n" +
       "Nenhum clipe foi modificado.";
+  } catch (err) {
+    reviewStatus.className = "error";
+    reviewStatus.textContent =
+      "Erro ao importar revisão: " +
+      (err?.message || String(err));
+    console.error(err);
+  } finally {
+    reviewImportButton.disabled = false;
+  }
+});
+
+reviewUnclassifiedButton.addEventListener("click", () =>
+  handleReviewNavigation(async () => {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+    const cuts = reviewSession.cuts;
+    let next = -1;
+
+    // Encontra a próxima pendência de classificação, incluindo
+    // a própria emenda caso seja a única pendente.
+    for (let step = 1; step <= cuts.length; step++) {
+      const index = (reviewIndex + step) % cuts.length;
+      const cut = cuts[index];
+      if (
+        cut.verdict === "revisar" &&
+        (!cut.reason || !cut.suggestion)
+      ) {
+        next = index;
+        break;
+      }
+    }
+
+    if (next === -1) {
+      paintReview();
+      reviewStatus.className = "success";
+      reviewStatus.textContent =
+        "Todos os cortes sinalizados possuem motivo e ação.";
+      return;
+    }
+
+    reviewIndex = next;
+    paintReview();
+    await jumpReview(1);
   })
 );
