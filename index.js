@@ -2039,3 +2039,310 @@ checkImportedSequenceButton.addEventListener("click", async () => {
     checkImportedSequenceButton.disabled = false;
   }
 });
+
+
+// ==========================================
+// PIPE EDITOR AI 1.0 — REVISÃO DE EMENDAS
+// Somente navegação: nenhuma alteração nos clipes.
+// ==========================================
+const reviewStartButton = document.getElementById("reviewStartButton");
+const reviewPreviousButton = document.getElementById("reviewPreviousButton");
+const reviewNextButton = document.getElementById("reviewNextButton");
+const reviewJumpButton = document.getElementById("reviewJumpButton");
+const reviewBeforeButton = document.getElementById("reviewBeforeButton");
+const reviewApproveButton = document.getElementById("reviewApproveButton");
+const reviewFlagButton = document.getElementById("reviewFlagButton");
+const reviewExportButton = document.getElementById("reviewExportButton");
+const reviewStatus = document.getElementById("reviewStatus");
+const reviewCounter = document.getElementById("reviewCounter");
+const reviewTime = document.getElementById("reviewTime");
+const reviewProgress = document.getElementById("reviewProgress");
+const reviewNote = document.getElementById("reviewNote");
+
+let reviewSession = null;
+let reviewIndex = 0;
+
+function makeReviewSeams(cuts, fps) {
+  const sorted = cuts.slice().sort((a, b) => a.start - b.start);
+  let removedBefore = 0;
+  let previousEnd = 0;
+
+  return sorted.map((cut, index) => {
+    const startFrame = Math.round(cut.start * fps);
+    const endFrame = Math.round(cut.end * fps);
+
+    if (startFrame < previousEnd || endFrame <= startFrame) {
+      throw new Error("Corte inválido ou sobreposto: " + (index + 1));
+    }
+
+    const seamFrame = startFrame - removedBefore;
+    const item = {
+      index: index + 1,
+      sourceStart: cut.start,
+      sourceEnd: cut.end,
+      startFrame,
+      endFrame,
+      seamFrame,
+      seamSeconds: seamFrame / fps,
+      removedFrames: endFrame - startFrame,
+      verdict: "pendente",
+      note: ""
+    };
+
+    removedBefore += item.removedFrames;
+    previousEnd = endFrame;
+    return item;
+  });
+}
+
+function currentReviewCut() {
+  return reviewSession && reviewSession.cuts[reviewIndex];
+}
+
+function saveCurrentReviewNote() {
+  const cut = currentReviewCut();
+  if (cut) cut.note = String(reviewNote.value || "").trim();
+}
+
+function paintReview() {
+  if (!reviewSession) {
+    reviewStatus.textContent =
+      "Registre a sequência original e importe os cortes antes de iniciar.";
+    return;
+  }
+
+  const cut = currentReviewCut();
+  const total = reviewSession.cuts.length;
+  const counts = { aprovado: 0, revisar: 0, pendente: 0 };
+
+  for (const item of reviewSession.cuts) {
+    counts[item.verdict] = (counts[item.verdict] || 0) + 1;
+  }
+
+  reviewCounter.textContent = "Emenda " + cut.index + " de " + total;
+  reviewTime.textContent =
+    "Posição na sequência editada: " +
+    cut.seamSeconds.toFixed(3) + " s\n" +
+    "Trecho removido da origem: " +
+    cut.sourceStart.toFixed(3) + " → " +
+    cut.sourceEnd.toFixed(3) + " s\n" +
+    "Remoção quantizada: " +
+    (cut.removedFrames / reviewSession.fps).toFixed(3) + " s\n" +
+    "Avaliação: " + cut.verdict.toUpperCase();
+  reviewProgress.textContent =
+    "Aprovados: " + counts.aprovado +
+    " · Revisar: " + counts.revisar +
+    " · Pendentes: " + counts.pendente;
+  reviewNote.value = cut.note;
+
+  reviewPreviousButton.disabled = reviewIndex === 0;
+  reviewNextButton.disabled = reviewIndex === total - 1;
+  reviewStatus.className = "success";
+  reviewStatus.textContent =
+    "Revisão ativa: " + reviewSession.sequenceName + "\n" +
+    "Use '1 s antes' para posicionar o cursor, " +
+    "e reproduza pelo Premiere. " +
+    "Este painel não inicia playback automaticamente.";
+}
+
+async function getAuditedReviewSequence() {
+  if (!reviewSession) {
+    throw new Error("Clique primeiro em Iniciar revisão.");
+  }
+
+  const app = require("premierepro");
+  const project = await app.Project.getActiveProject();
+  if (!project) throw new Error("Nenhum projeto ativo.");
+
+  const sequence = await project.getActiveSequence();
+  if (!sequence || String(sequence.guid) !== reviewSession.sequenceGuid) {
+    throw new Error(
+      "A sequência ativa mudou. Reabra a sequência editada " +
+      "ou inicie a revisão novamente."
+    );
+  }
+
+  return { app, sequence };
+}
+
+async function jumpReview(secondsBefore) {
+  const { app, sequence } = await getAuditedReviewSequence();
+  saveCurrentReviewNote();
+
+  const point = Math.max(
+    0,
+    currentReviewCut().seamSeconds - secondsBefore
+  );
+  const tick = app.TickTime.createWithSeconds(point);
+  const jumped = await sequence.setPlayerPosition(tick);
+
+  if (jumped !== true) {
+    throw new Error("O Premiere não confirmou o posicionamento do cursor.");
+  }
+
+  paintReview();
+  reviewStatus.textContent =
+    "Cursor posicionado em " + point.toFixed(3) +
+    " s na sequência editada.\n" +
+    "Reproduza o trecho no Premiere e marque a avaliação.";
+}
+
+async function handleReviewNavigation(action) {
+  try {
+    await action();
+  } catch (err) {
+    reviewStatus.className = "error";
+    reviewStatus.textContent =
+      "Erro na revisão: " + (err?.message || String(err));
+    console.error(err);
+  }
+}
+
+reviewStartButton.addEventListener("click", async () => {
+  reviewStartButton.disabled = true;
+  reviewStatus.className = "";
+  reviewStatus.textContent = "Validando a sequência editada...";
+  try {
+    if (!smartCutOriginalAudit) {
+      throw new Error(
+        "Na seção 10, registre primeiro a sequência ORIGINAL."
+      );
+    }
+    if (!importedCuts || importedCuts.length < 1) {
+      throw new Error("Importe o JSON Smart Cut primeiro.");
+    }
+
+    const app = require("premierepro");
+    const project = await app.Project.getActiveProject();
+    if (!project) throw new Error("Nenhum projeto ativo.");
+
+    const sequence = await project.getActiveSequence();
+    if (!sequence) throw new Error("Nenhuma sequência ativa.");
+
+    if (String(sequence.guid) === smartCutOriginalAudit.guid) {
+      throw new Error(
+        "Abra a sequência já editada, não a original."
+      );
+    }
+
+    const actual = await auditSnapshot(app, sequence);
+    const expected = buildAuditExpectations(
+      smartCutOriginalAudit,
+      importedCuts
+    );
+    const comparison = compareAudit(expected, actual);
+
+    if (comparison.issues.length) {
+      throw new Error(
+        "A sequência editada não passou na auditoria: " +
+        comparison.issues[0] +
+        " (total de diferenças: " +
+        comparison.issues.length + ")."
+      );
+    }
+
+    const rate = smartCutOriginalAudit.fps;
+    reviewSession = {
+      sourceName: smartCutOriginalAudit.name,
+      sequenceName: actual.name,
+      sequenceGuid: String(actual.guid),
+      fps: rate,
+      cuts: makeReviewSeams(importedCuts, rate),
+      startedAt: new Date().toISOString()
+    };
+    reviewIndex = 0;
+    paintReview();
+  } catch (err) {
+    reviewSession = null;
+    reviewStatus.className = "error";
+    reviewStatus.textContent =
+      "Não foi possível iniciar: " +
+      (err?.message || String(err));
+    console.error(err);
+  } finally {
+    reviewStartButton.disabled = false;
+  }
+});
+
+reviewPreviousButton.addEventListener("click", () =>
+  handleReviewNavigation(async () => {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+    reviewIndex = Math.max(0, reviewIndex - 1);
+    paintReview();
+    await jumpReview(1);
+  })
+);
+reviewNextButton.addEventListener("click", () =>
+  handleReviewNavigation(async () => {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+    reviewIndex = Math.min(reviewSession.cuts.length - 1, reviewIndex + 1);
+    paintReview();
+    await jumpReview(1);
+  })
+);
+reviewJumpButton.addEventListener("click", () =>
+  handleReviewNavigation(() => jumpReview(0))
+);
+reviewBeforeButton.addEventListener("click", () =>
+  handleReviewNavigation(() => jumpReview(1))
+);
+
+function markReview(verdict) {
+  return handleReviewNavigation(async () => {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+    currentReviewCut().verdict = verdict;
+    const wasLast = reviewIndex === reviewSession.cuts.length - 1;
+    if (!wasLast) reviewIndex++;
+    paintReview();
+    if (!wasLast) await jumpReview(1);
+  });
+}
+
+reviewApproveButton.addEventListener("click", () => markReview("aprovado"));
+reviewFlagButton.addEventListener("click", () => markReview("revisar"));
+
+reviewExportButton.addEventListener("click", () =>
+  handleReviewNavigation(async () => {
+    await getAuditedReviewSequence();
+    saveCurrentReviewNote();
+
+    const file = await fs.getFileForSaving(
+      "PipeEditorAI_Revisao_23_Cortes.json",
+      { types: ["json"] }
+    );
+
+    if (!file) return;
+
+    const approved = reviewSession.cuts.filter(
+      c => c.verdict === "aprovado"
+    ).length;
+    const flagged = reviewSession.cuts.filter(
+      c => c.verdict === "revisar"
+    ).length;
+
+    const report = {
+      version: "1.0-review",
+      sourceSequence: reviewSession.sourceName,
+      editedSequence: reviewSession.sequenceName,
+      fps: reviewSession.fps,
+      checked: reviewSession.cuts.length - reviewSession.cuts.filter(
+        c => c.verdict === "pendente"
+      ).length,
+      approved,
+      flagged,
+      exportedAt: new Date().toISOString(),
+      cuts: reviewSession.cuts.map(c => ({ ...c }))
+    };
+
+    await file.write(JSON.stringify(report, null, 2));
+    reviewStatus.className = "success";
+    reviewStatus.textContent =
+      "Relatório salvo: " + file.name + "\n" +
+      "Aprovados: " + approved + " · Revisar: " +
+      flagged + ".\n" +
+      "Nenhum clipe foi modificado.";
+  })
+);
