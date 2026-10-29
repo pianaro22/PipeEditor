@@ -443,3 +443,22 @@ small {
 #reviewExportButton {
   margin-top: 10px;
 }
+
+
+/* PIPE EDITOR AI 1.1 — Feedback estruturado */
+#reviewReason,
+#reviewAction {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4584d7;
+  border-radius: 7px;
+  background: #1b2230;
+  color: #eaf0fb;
+  font: 12px Arial, sans-serif;
+}
+#reviewImportButton,
+#reviewUnclassifiedButton {
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
