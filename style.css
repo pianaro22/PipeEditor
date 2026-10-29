@@ -380,3 +380,66 @@ small {
   border: 1px solid #4584d7;
   color: #eaf0fb;
 }
+
+
+/* PIPE EDITOR AI 1.0 — REVISÃO GUIADA */
+#reviewStatus {
+  margin-top: 12px;
+  border-radius: 7px;
+  padding: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+.review-panel {
+  border: 1px solid #34445b;
+  border-radius: 8px;
+  background: #141b27;
+  padding: 12px;
+  margin: 12px 0;
+}
+#reviewCounter {
+  color: #80b8ff;
+  font-size: 14px;
+}
+#reviewTime {
+  margin: 10px 0;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+#reviewProgress {
+  margin-bottom: 12px;
+  color: #a7d0ff;
+}
+.review-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.review-buttons button {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 5px;
+  font-size: 11px;
+}
+.review-panel label {
+  display: block;
+  font-size: 12px;
+  margin: 12px 0 6px;
+  color: #b3bfd0;
+}
+#reviewNote {
+  display: block;
+  width: 100%;
+  color: #eaf0fb;
+  border: 1px solid #4584d7;
+  border-radius: 7px;
+  background: #1b2230;
+  padding: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  font: 12px Arial, sans-serif;
+}
+#reviewExportButton {
+  margin-top: 10px;
+}
