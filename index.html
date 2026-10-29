@@ -9,7 +9,7 @@
 <body>
 <main>
 
-  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 0.9</div>
+  <div class="eyebrow">PREMIERE PRO 2026 · VERSÃO 1.0</div>
 
   <h1>PIPE <span>EDITOR AI</span></h1>
 
@@ -233,6 +233,49 @@
     <small>
       Apenas leitura. O resultado não verifica qualidade de
       áudio, efeitos ou gerenciamento de cores.
+    </small>
+  </section>
+
+
+  <section>
+    <h2>11 · Smart Cut 1.0 — Revisão das emendas</h2>
+    <p>
+      Navegue pelos 23 cortes na sequência editada,
+      escute cada emenda e registre o resultado.
+      Nenhum clipe será modificado.
+    </p>
+    <button id="reviewStartButton" class="secondary">
+      Iniciar revisão dos 23 cortes
+    </button>
+    <div id="reviewStatus" role="status">
+      Importe o JSON, registre a sequência original na seção 10
+      e abra a sequência editada.
+    </div>
+    <div class="review-panel">
+      <strong id="reviewCounter">Emenda —</strong>
+      <div id="reviewTime">Aguardando revisão.</div>
+      <div id="reviewProgress">Aprovados: 0 · Revisar: 0 · Pendentes: 23</div>
+      <div class="review-buttons">
+        <button id="reviewPreviousButton" class="secondary" disabled>Anterior</button>
+        <button id="reviewNextButton" class="secondary" disabled>Próxima</button>
+      </div>
+      <div class="review-buttons">
+        <button id="reviewBeforeButton" class="secondary">Ir 1 s antes</button>
+        <button id="reviewJumpButton" class="secondary">Ir à emenda</button>
+      </div>
+      <label for="reviewNote">Observação sobre este corte (opcional)</label>
+      <textarea id="reviewNote" rows="3" placeholder="Ex.: cortou a primeira sílaba; respiração perceptível"></textarea>
+      <div class="review-buttons">
+        <button id="reviewApproveButton">Aprovar corte</button>
+        <button id="reviewFlagButton" class="secondary">Precisa revisar</button>
+      </div>
+      <button id="reviewExportButton" class="secondary">
+        Salvar relatório da revisão (JSON)
+      </button>
+    </div>
+    <small>
+      O botão apenas movimenta o cursor. Inicie a reprodução
+      no próprio Premiere para escutar a emenda.
     </small>
   </section>
 
